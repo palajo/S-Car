@@ -5,7 +5,6 @@ import {
     Col,
 } from 'react-bootstrap';
 
-import sliderimage from '../static/images/slider-image.png';
 import brand from '../static/images/brand.svg';
 
 
@@ -20,7 +19,7 @@ type BrandProps = {
 export const Brand = ({ brandLogo, brandTitle }: BrandProps) =>
 <Col className="BrandBackground">
     <Row className="justify-content-center ">
-        <img src={brandLogo} width="24" />
+        <img alt="" src={brandLogo} width="24" />
         <div className="margin-left-10 align-self-center">{brandTitle}</div>
     </Row>
 </Col>

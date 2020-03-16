@@ -23,8 +23,8 @@ function Sidebar() {
             <Container fluid>
                 <Row className="margin-bottom-30 padding-left-right-20">
                     <Col>
-                        <img src={mainmenuwhite} height="50px" className="menuToggle margin-right-20" />
-                        <img src={logowhite} height="50px" />
+                        <img alt="" src={mainmenuwhite} height="50px" className="menuToggle margin-right-20" />
+                        <img alt="" src={logowhite} height="50px" />
                     </Col>
                 </Row>
                 <Row>

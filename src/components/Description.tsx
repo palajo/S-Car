@@ -2,11 +2,7 @@ import React from 'react';
 import {
     Container,
     Row,
-    Col,
-    Nav,
 } from 'react-bootstrap';
-
-import Map from '../static/images/google-map.png';
 
 function Description() {
 	return(

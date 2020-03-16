@@ -24,7 +24,7 @@ type ContactProps = {
 export const Contact = ({ contactIcon, contactTitle, contactText }: ContactProps) =>
 <Row>
     <div className="span">
-        <img width="64px" src={contactIcon} />
+        <img alt="" width="64px" src={contactIcon} />
     </div>
     <div className="span margin-left-15 align-self-center">
         <p className="gray-12px">{contactTitle}</p>
@@ -59,7 +59,7 @@ function Contacts() {
 					</Row>
 				</Col>
 				<Col>
-					<img src={Map} width="100%" height="300"/>
+					<img alt="" src={Map} width="100%" height="300"/>
 				</Col>
 			</Row>
 		</Container>

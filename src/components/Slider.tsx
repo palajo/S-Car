@@ -5,8 +5,6 @@ import {
     Col,
 } from 'react-bootstrap';
 
-import sliderimage from '../static/images/slider-image.png';
-
 function Slider() {
 	return(
         <Container fluid className="Slider margin-bottom-50">
@@ -20,7 +18,7 @@ function Slider() {
                             </h1>
                             <hr />
                             <p className="SliderText">USE THE SEARCH BOX ON OUR WEBSITE</p>
-                            <a className="button">Find details</a>
+                            <button className="button">Find details</button>
                         </Row>
                     </Col>
                 </Row>

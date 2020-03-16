@@ -18,7 +18,7 @@ type NewsBlockProps = {
 export const NewsBlock = ({ newsImage, newsDescription }: NewsBlockProps) =>
 <Col>
     <Row>
-        <img src={newsImage} width="100%" />
+        <img alt="" src={newsImage} width="100%" />
     </Row>
     <Row>
         <p className="NewsHeading">{newsDescription}</p>

@@ -22,7 +22,7 @@ export const Icon = ({ iconPosition, iconImage, iconDescription }: IconProps) =>
 <Col className="align-self-start">
     <Row className={iconPosition}>
         <div className="IconImage">
-            <img src={iconImage} className="IconIcon" height="84px" />
+            <img alt="" src={iconImage} className="IconIcon" height="84px" />
         </div>
         <div className="HR align-self-center"></div>
     </Row>

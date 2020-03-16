@@ -7,6 +7,12 @@ import {
     Form,
     InputGroup
 } from 'react-bootstrap';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from 'react-router-dom';
 
 import Sidebar from './Sidebar';
 
@@ -65,10 +71,10 @@ function Header() {
 						<Col xl={3}>
 							<Row className="justify-content-start">
 								<div className="MainNavigation-Menu align-self-center margin-right-20">
-									<img src={mainmenu} className="menuToggle" />
+									<img alt="" src={mainmenu} className="menuToggle" />
 								</div>
 								<div className="MainNavigation-Logo">
-									<img src={logo} alt="logo" height="50" />
+									<img alt="" src={logo} height="50" />
 								</div>
 							</Row>
 						</Col>
@@ -84,7 +90,7 @@ function Header() {
 												placeholder="Search here.."
 												/>
 												<InputGroup.Prepend className="search-input-button">
-													<img src={search} />
+													<img alt="" src={search} />
 												</InputGroup.Prepend>
 											</InputGroup>
 										</Form.Group>
@@ -92,7 +98,7 @@ function Header() {
 								</div>
 								<div className="MainNavigation-Profile d-flex margin-left-20 margin-right-20">
 									<div className="span margin-right-10">
-										<img src={profile} />
+										<img alt="" src={profile} />
 									</div>
 									<div className="span align-self-center">
 										<p className="bold-16px">Personal</p>
@@ -101,7 +107,7 @@ function Header() {
 								</div>
 								<div className="MainNavigation-Cart d-flex margin-left-20 margin-right-20">
 									<div className="span margin-right-10">
-										<img src={cart} />
+										<img alt="" src={cart} />
 									</div>
 									<div className="span align-self-center">
 											<p className="bold-16px">Shopping</p>

@@ -1,6 +1,4 @@
 import React from 'react';
-import { Container, Row, Col, Navbar, Nav, Form, InputGroup } from 'react-bootstrap';
-
 
 import Overlay from '../components/Overlay';
 import Slider from '../components/Slider';
