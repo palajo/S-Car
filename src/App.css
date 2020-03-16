@@ -1,38 +1,511 @@
-.App {
-  text-align: center;
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	font-size: 14px;
+	line-height: 16px;
+
+	color: #1A1414;
+
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* font styles*/
+h1{
+	margin: 0px;
+}
+h2{
+	font-size: 24px;
+	line-height: 30px;
+
+	margin: 0px;
+}
+h3{
+	margin: 0px;
+}
+p{
+	margin: 0px;
+	color: #333;
+}
+.bold-16px{
+    font-size: 16px;
+    line-height: 16px;
+
+    font-weight: 700;
+}
+.color-red{
+    color: #962932;
+}
+/* ------------------------ */
+
+/* bootstrap corrections */
+.form-group{
+    margin: 0px;
+}
+.container{
+	max-width: 1366px;
+}
+/* ------------------------ */
+
+/* margin-top */
+.margin-top-10{
+	margin-top: 10px;
+}
+.margin-top-15{
+	margin-top: 10px;
+}
+.margin-top-20{
+	margin-top: 20px;
+}
+.margin-top-25{
+	margin-top: 20px;
+}
+.margin-top-30{
+	margin-top: 30px;
+}
+.margin-top-40{
+	margin-top: 40px;
+}
+.margin-top-50{
+	margin-top: 50px;
+}
+.margin-top-60{
+	margin-top: 60px;
+}
+.margin-top-70{
+	margin-top: 70px;
+}
+/* ------------------------ */
+
+/* margin-bottom */
+.margin-bottom-10{
+	margin-bottom: 10px;
+}
+.margin-bottom-15{
+	margin-bottom: 10px;
+}
+.margin-bottom-20{
+	margin-bottom: 20px;
+}
+.margin-bottom-25{
+	margin-bottom: 20px;
+}
+.margin-bottom-30{
+	margin-bottom: 30px;
+}
+.margin-bottom-40{
+	margin-bottom: 40px;
+}
+.margin-bottom-50{
+	margin-bottom: 50px;
+}
+.margin-bottom-60{
+	margin-bottom: 60px;
+}
+.margin-bottom-70{
+	margin-bottom: 70px;
+}
+/* ------------------------ */
+
+/* margin-left */
+.margin-left-10{
+	margin-left: 10px;
+}
+.margin-left-15{
+	margin-left: 10px;
+}
+.margin-left-20{
+	margin-left: 20px;
+}
+.margin-left-25{
+	margin-left: 20px;
+}
+.margin-left-30{
+	margin-left: 30px;
+}
+.margin-left-40{
+	margin-left: 40px;
+}
+.margin-left-50{
+	margin-left: 50px;
+}
+.margin-left-60{
+	margin-left: 60px;
+}
+.margin-left-70{
+	margin-left: 70px;
+}
+/* ------------------------ */
+
+/* margin-right */
+.margin-right-10{
+	margin-right: 10px;
+}
+.marginrightt-15{
+	margin-right: 10px;
+}
+.margin-right-20{
+	margin-right: 20px;
+}
+.margin-right-25{
+	margin-right: 20px;
+}
+.margin-right-30{
+	margin-right: 30px;
+}
+.margin-right-40{
+	margin-right: 40px;
+}
+.margin-right-50{
+	margin-right: 50px;
+}
+.margin-right-60{
+	margin-right: 60px;
+}
+.margin-right-70{
+	margin-right: 70px;
+}
+/* ------------------------ */
+
+/* TopNavigation styles */
+.TopNavigation{
+	padding: 10px 0px;
+}
+.TopNavigation .nav a.nav-link{
+	color: black;
+	padding: 0px 10px;
+}
+.TopNavigation .nav a.nav-link:hover{
+	color: #B11622;
+	transition: all 0.1s ease;
+}
+.TopNavigation .nav a.nav-link:first-child{
+	padding-left: 0px;
+}
+.TopNavigation .nav a.nav-link:last-child{
+	padding-right: 0px;
+}
+/* ------------------------ */
+
+/* MainNavigation styles */
+.MainNavigation{
+	border-top: 1px solid #dedede;
+	border-bottom: 1px solid #dedede;
+	padding: 15px 0px;
+
+	margin-bottom: 20px;
+}
+.form-control{
+	height: 35px;
+	font-size: 12px;
+
+
+	border: 1px solid #e2e2e2;
+	border-radius: 0px;
+
+	width: 320px;
+	z-index: 0;
+}
+.search-input-button{
+	position: absolute;
+	right: -15px;
+	top: -7.5px;
+
+	z-index: 4;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* ------------------------ */
+
+/* Button styles */
+.button{
+	display: inline-block;
+
+	text-align: center;
+	font-size: 14px;
+	font-weight: 600;
+	text-transform: uppercase;
+
+	line-height: 50px;
+	width: 240px;
+	margin-left: 15px;
+
+	color: white !important;
+
+	background: none;
+	outline: none;
+	border: none;
+	cursor: pointer;
+
+	position: relative;
+	z-index: 1;
+}
+.button::before {
+    content: '';
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    background: linear-gradient(to right, #B11622 50%, #962932 50%);
+	background-size: 200% 100%;
+	background-position: right bottom;
+
+	transition:all 0.3s ease;
+    transform: skew(-150deg);
+    z-index: -1;
+}
+.button:hover::before{
+	background-position: left bottom;
+}
+/* ------------------------ */
+
+/* Slider styles */
+.Slider{
+	border-bottom: 1px solid #962932;
+}
+.SliderBackground{
+	background: url(./static/images/slider-image.png);
+	background-size: contain;
+	background-position: right;
+	background-repeat: no-repeat;
+	padding: 120px 0px;
+
+}
+.SliderHeading{
+	font-size: 36px;
+	line-height: 48px;
+
+	text-transform: uppercase;
+}
+.Slider hr{
+	background: #707070;
+	width: 100%;
+	margin: 10px 0px;
+}
+p.SliderText{
+	font-size: 16px;
+	line-height: 24px;
+
+	margin-bottom: 20px;
+}
+/* ------------------------ */
+
+/* Brand styles */
+.BrandBackground{
+	display: inline-block;
+
+	font-size: 14px;
+	font-weight: 600;
+	text-transform: uppercase;
+
+	color: #333;
+	margin: 5px 10px;
+
+	line-height: 45px;
+
+	background: none;
+	outline: none;
+	border: none;
+
+	position: relative;
+	z-index: 1;
+	cursor: pointer;
+}
+.BrandBackground::before {
+    content: '';
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+	border: 1px solid #962932;
+
+    background: linear-gradient(to right, #B12E39 50%, #fff 50%);
+	background-size: 200% 100%;
+	background-position: right bottom;
+
+	transition: all 0.4s ease;
+    transform: skew(150deg);
+    z-index: -1;
+}
+#reverse .BrandBackground::before {
+	transform: skew(-150deg);
+}
+.BrandBackground:hover img{
+	filter: invert(1);
+	transition: 0.4s ease;
+}
+.BrandBackground:hover{
+	color: white;
+	transition: 0.4s ease;
+}
+.BrandBackground:hover::before{
+	background-position: left bottom;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+/* ------------------------ */
 
-.App-link {
-  color: #61dafb;
-}
+/* IconGraphic styles */
+.IconGraphic{
+	font-size: 16px;
+	line-height: 22px;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+	color: #333;
 }
+/* ------------------------ */
+
+/* NewsBlock styles */
+.NewsBlock img{
+	margin-bottom: 15px;
+}
+.NewsBlock p{
+	font-size: 20px;
+	line-height: 24px;
+
+	font-weight: 600;
+}
+.NewsBlock .col{
+	margin: 0px 10px;
+}
+.NewsBlock .col:first-child{
+	margin-left: 0px;
+}
+.NewsBlock .col:last-child{
+	margin-right: 0px;
+}
+/* ------------------------ */
+
+/* ContactsBlock styles */
+.gray-12px{
+	font-size: 12px;
+	line-height: 18px;
+
+	color: #707070;
+}
+.ContactInfo > .col > .row{
+	padding: 10px 0px;
+
+}
+.ContactPhone{
+	font-size: 30px;
+	line-height: 36px;
+}
+/* ------------------------ */
+
+/* DescriptionBlock styles */
+.DescriptionBlock h2{
+	font-size: 24px;
+	font-weight: 700;
+
+	line-height: 30px;
+}
+.DescriptionBlock p{
+	font-size: 16px;
+	line-height: 22px;
+}
+/* ------------------------ */
+
+/* Footer styles */
+footer{
+	background: #962932;
+	padding: 10px 0px;
+}
+footer .nav a.nav-link{
+	color: white;
+	padding: 0px 10px;
+}
+footer .nav a.nav-link:hover{
+	color: #cdcbcb;
+	transition: all 0.1s ease;
+}
+footer p{
+	color: white;
+}
+.IconImage{
+	z-index: 1;
+}
+.HR{
+	position: absolute;
+
+	width: 100%;
+	height: 1px;
+
+	background: #dfe9eb;
+
+}
+/* ------------------------ */
+
+/* sidebar */
+.menuToggle{
+	cursor: pointer;
+}
+.overlay{
+	position: fixed;
+
+	height: 100%;
+	width: 100%;
+
+	top: 0;
+	left: 0;
+
+	background: rgba(0,0,0, 0.35);
+	z-index: 1000;
+
+	display: none;
+	transition: 0.5s;
+
+	animation: ease-in-out fade-out 0.3s;
+}
+@keyframes fade-out {
+	0%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 100%;
+	}
+}
+.sidenav{
+	position: fixed;
+	top: 0;
+	left: -340px;
+	z-index: 1001;
+
+	width: 340px;
+	height: 100%;
+
+	padding-top: 40px;
+
+	background: #962932;
+
+	transition: 0.3s;
+}
+.sidenav .container-fluid{
+	padding: 0;
+}
+.padding-left-right-20{
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.SidebarMenu > a.nav-link{
+	color: white;
+	padding: 15px 20px;
+
+	font-size: 16px;
+	text-transform: uppercase;
+
+	border-top: 1px solid white;
+}
+.SidebarMenu > a.nav-link:last-child{
+	border-bottom: 1px solid white;
+}
+.SidebarMenu > .nav-link:hover{
+	background: #B11622;
+	transition: 0.1s ease;
+}
+/* ------------------------ */

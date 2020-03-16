@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="54" viewBox="0 0 64 54">
+  <g id="icon-contacts" transform="translate(0.034 -187)">
+    <g id="Polygon_17" data-name="Polygon 17" transform="translate(-0.034 187)" fill="#fff">
+      <path d="M 47.71509552001953 53.5 L 16.2849063873291 53.5 L 0.5812019109725952 27 L 16.28491592407227 0.5 L 47.71509552001953 0.5 L 63.41879653930664 27 L 47.71509552001953 53.5 Z" stroke="none"/>
+      <path d="M 16.5698127746582 1 L 1.162395477294922 27 L 16.56980133056641 53 L 47.43019866943359 53 L 62.83760452270508 27 L 47.43019866943359 1 L 16.5698127746582 1 M 16.0000114440918 0 L 48 0 L 64 27 L 48 54 L 16 54 L 0 27 L 16.0000114440918 0 Z" stroke="none" fill="#dfe9eb"/>
+    </g>
+    <text id="_" data-name="" transform="translate(31.966 222)" fill="#962932" font-size="22" font-family="FontAwesome5Pro-Regular, 'Font Awesome 5 Pro'"><tspan x="-8.25" y="0"></tspan></text>
+  </g>
+</svg>
