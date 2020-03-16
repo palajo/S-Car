@@ -1,23 +1,26 @@
 import React from 'react';
 
-import Overlay from '../components/Overlay';
-import Slider from '../components/Slider';
-import Brands from '../components/Brands';
-import IconGraphic from '../components/IconGraphic';
-import News from '../components/News';
-import Contacts from '../components/Contacts';
-import Description from '../components/Description';
+// importing Mainpage components
+import Header from '../components/Header';
+import Slider from '../components/mainpage/Slider';
+import Manufacturers from '../components/mainpage/Manufacturers';
+import Benefits from '../components/mainpage/Benefits';
+import News from '../components/mainpage/News';
+import Contacts from '../components/mainpage/Contacts';
+import Description from '../components/mainpage/Description';
+import Footer from '../components/Footer';
 
 function Mainpage() {
 	return(
-		<body className="AppBody">
-			<Overlay />
+		<body>
+			<Header />
 			<Slider />
-			<Brands />
-			<IconGraphic />
+			<Manufacturers />
+			<Benefits />
 			<News />
 			<Contacts />
 			<Description />
+			<Footer />
 		</body>
 	);
 }

@@ -1,15 +1,12 @@
 import React from 'react';
-import {
-    Container,
-    Row,
-    Col,
-} from 'react-bootstrap';
+import { Container, Row, Col } from 'react-bootstrap';
+
 
 function Slider() {
 	return(
         <Container fluid className="Slider margin-bottom-50">
             <Container className="SliderBackground">
-                <Row >
+                <Row>
                     <Col lg={4} className="align-self-center">
                         <Row>
                             <h1 className="SliderHeading">
@@ -26,5 +23,6 @@ function Slider() {
         </Container>
     );
 }
+
 
 export default Slider;

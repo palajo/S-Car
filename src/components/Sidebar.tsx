@@ -1,25 +1,19 @@
 import React from 'react';
-import {
-    Container,
-    Row,
-    Col,
-    Nav,
-} from 'react-bootstrap';
+import { Container, Row, Col } from 'react-bootstrap';
+
+
+// importing Sidebar components
+import SidebarNavigation from './navigation/SidebarNavigation';
+
+
+// importing Sidebar images
 import logowhite from '../static/images/logo-white.svg';
 import mainmenuwhite from '../static/images/main-menu-white.svg';
 
-/*
-function closeNav() {
-    document.getElementById('overlay').style.display = "none";
-    document.getElementById('sidenav').style.left = "-340px";
-}
-*/
 
 function Sidebar() {
 	return(
-
         <div className="sidenav" id="sidenav">
-
             <Container fluid>
                 <Row className="margin-bottom-30 padding-left-right-20">
                     <Col>
@@ -29,18 +23,7 @@ function Sidebar() {
                 </Row>
                 <Row>
                     <Col>
-                        <Nav className="flex-column SidebarMenu">
-                            <Nav.Link href="#">Catalog</Nav.Link>
-                            <Nav.Link href="#">My profile</Nav.Link>
-                            <Nav.Link href="#">Cart</Nav.Link>
-                            <Nav.Link href="#">About us</Nav.Link>
-                            <Nav.Link href="#">Our office</Nav.Link>
-                            <Nav.Link href="#">Delivery</Nav.Link>
-                            <Nav.Link href="#">Payment</Nav.Link>
-                            <Nav.Link href="#">For clients</Nav.Link>
-                            <Nav.Link href="#">For business</Nav.Link>
-                            <Nav.Link href="#">Contacts</Nav.Link>
-                        </Nav>
+                        <SidebarNavigation />
                     </Col>
                 </Row>
             </Container>
@@ -48,4 +31,12 @@ function Sidebar() {
     );
 }
 
+
 export default Sidebar;
+
+/* Sidebar Close
+function closeNav() {
+    document.getElementById('overlay').style.display = "none";
+    document.getElementById('sidenav').style.left = "-340px";
+}
+------------------------ */

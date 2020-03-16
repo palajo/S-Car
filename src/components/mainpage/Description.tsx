@@ -1,8 +1,6 @@
 import React from 'react';
-import {
-    Container,
-    Row,
-} from 'react-bootstrap';
+import { Container, Row } from 'react-bootstrap';
+
 
 function Description() {
 	return(
@@ -23,5 +21,6 @@ function Description() {
 		</Container>
     );
 }
+
 
 export default Description;
