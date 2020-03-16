@@ -8,6 +8,9 @@ import {
     InputGroup
 } from 'react-bootstrap';
 
+import Sidebar from './Sidebar';
+
+
 /* images */
 import logo from '../static/images/logo.svg';
 import mainmenu from '../static/images/main-menu.svg';
@@ -24,6 +27,7 @@ function openNav() {
 function Header() {
 	return(
 		<header>
+		<Sidebar />
 			<Container fluid className="TopNavigation">
 				<Container>
 					<Row className="justify-content-between">

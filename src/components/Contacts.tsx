@@ -35,7 +35,7 @@ export const Contact = ({ contactIcon, contactTitle, contactText }: ContactProps
 
 function Contacts() {
 	return(
-		<Container>
+		<Container className="margin-bottom-50">
 			<Row className="margin-bottom-30 justify-content-center">
 				<h2>Contacts</h2>
 			</Row>

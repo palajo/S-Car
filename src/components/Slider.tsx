@@ -9,7 +9,7 @@ import sliderimage from '../static/images/slider-image.png';
 
 function Slider() {
 	return(
-        <Container fluid className="Slider">
+        <Container fluid className="Slider margin-bottom-50">
             <Container className="SliderBackground">
                 <Row >
                     <Col lg={4} className="align-self-center">

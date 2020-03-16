@@ -29,7 +29,7 @@ export const Brand = ({ brandLogo, brandTitle }: BrandProps) =>
 // creating brands container
 function Brands() {
 	return(
-        <Container>
+        <Container className="margin-bottom-50">
             <Row>
 				<Brand brandLogo={brand} brandTitle="Volkswagen" />
 				<Brand brandLogo={brand} brandTitle="Volkswagen" />

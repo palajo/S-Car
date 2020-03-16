@@ -10,11 +10,10 @@ import mainmenuwhite from '../static/images/main-menu-white.svg';
 
 /*
 function closeNav() {
-    document.getElementById("overlay").style.display = "none";
-    document.getElementById("sidenav").style.left = "-340px";
+    document.getElementById('overlay').style.display = "none";
+    document.getElementById('sidenav').style.left = "-340px";
 }
 */
-
 
 function Sidebar() {
 	return(

@@ -28,7 +28,7 @@ export const NewsBlock = ({ newsImage, newsDescription }: NewsBlockProps) =>
 
 function News() {
 	return(
-		<Container>
+		<Container className="margin-bottom-50">
 			<Row className="margin-bottom-30 justify-content-center">
 				<h2>Latest news</h2>
 			</Row>
