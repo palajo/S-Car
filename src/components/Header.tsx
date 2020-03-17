@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom';
 // importing Header components
 import Sidebar from './Sidebar';
 import HeaderNavigation from './navigation/HeaderNavigation';
+import Overlay from './Overlay';
 
 
 // importing Header images
@@ -16,9 +17,16 @@ import profile from '../static/images/profile.svg';
 import cart from '../static/images/cart.svg';
 
 
+function openNav() {
+	(document.getElementById("sidenav") as HTMLInputElement).style.left = "0px";
+	(document.getElementById("overlay") as HTMLInputElement).style.display = "block";
+}
+
+
 function Header() {
 	return(
         <header>
+			<Overlay />
             <Sidebar />
             <Container fluid className="TopNavigation">
                 <Container>
@@ -47,7 +55,7 @@ function Header() {
                         <Col xl={3}>
                             <Row className="justify-content-start">
                                 <div className="MainNavigation-Menu align-self-center margin-right-20">
-                                    <img alt="" src={mainmenu} className="menuToggle" />
+                                    <img alt="" src={mainmenu} className="menuToggle" onClick={openNav} />
                                 </div>
                                 <div className="MainNavigation-Logo">
                                     <Link to="/"><img alt="" src={logo} height="50" /></Link>
@@ -100,11 +108,3 @@ function Header() {
 
 
 export default Header;
-
-
-/* Sidebar Open
-function openNav() {
-    document.getElementById("sidenav").style.left = "0px";
-    document.getElementById("overlay").style.display = "block";
-}
------------------------- */
