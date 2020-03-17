@@ -1,4 +1,6 @@
 import React from 'react';
+import { Container, Row, Col } from 'react-bootstrap';
+
 
 // importing Mainpage components
 import Header from '../../components/Header';
@@ -8,7 +10,11 @@ function Warranty() {
 	return(
 		<body>
 			<Header />
-                <h1>Warranty</h1>
+				<Container>
+					<Row>
+						<h1>Warranty</h1>
+					</Row>
+				</Container>
 			<Footer />
 		</body>
 	);
