@@ -5,12 +5,14 @@ import { Container, Row } from 'react-bootstrap';
 // importing Mainpage components
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
+import Breadcrumbs from '../../components/Breadcrumbs';
 
 
 function Business() {
 	return(
 		<body>
 			<Header />
+			<Breadcrumbs />
 				<Container>
 					<Row>
 						<p>

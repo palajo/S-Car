@@ -361,7 +361,7 @@ p.SliderText{
 
 	border: 1px solid #962932;
 
-    background: linear-gradient(to right, #B12E39 50%, #fff 50%);
+    background: linear-gradient(to right, #B11622 50%, #fff 50%);
 	background-size: 200% 100%;
 	background-position: right bottom;
 
@@ -555,3 +555,26 @@ footer p{
 	transition: 0.1s ease;
 }
 /* ------------------------ */
+
+/* Breadcrumbs styles*/
+.Breadcrumbs span a{
+	color: inherit;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+.Breadcrumbs span:last-child a{
+	color: #962932;
+}
+.Breadcrumbs span a:hover{
+	color: #B11622;
+	text-decoration: underline;
+	transition: 0.1s ease;
+}
+.Breadcrumbs span::before{
+	content: '-';
+	padding: 0px 10px;
+}
+.Breadcrumbs span:first-child:before{
+	content: '';
+	padding: 0px;
+}
