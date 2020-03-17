@@ -7,8 +7,11 @@ html{
 	padding: 0;
 }
 body{
-	font-size: 14px;
-	line-height: 16px;
+	font-family: 'Qanelas';
+	font-weight: normal;
+
+	font-size: 16px;
+	line-height: 24px;
 
 	color: #1A1414;
 
@@ -16,31 +19,59 @@ body{
 	-moz-osx-font-smoothing: grayscale;
 }
 
+header, footer{
+	font-size: 14px;
+	line-height: 16px;
+}
+
 /* font styles*/
-h1{
+h1, h2, h3, h4, h5, p{
 	margin: 0px;
+}
+h1{
+	font-size: 36px;
+	line-height: 48px;
+
+	font-weight: 700;
 }
 h2{
 	font-size: 24px;
 	line-height: 30px;
 
-	margin: 0px;
+	font-weight: 700;
 }
 h3{
-	margin: 0px;
+	font-size: 18px;
+	line-height: 24px;
+
+	font-weight: 700;
+}
+h4{
+	font-size: 16px;
+	line-height: 18px;
+
+	font-weight: 600;
+}
+h5{
+	font-size: 14px;
+	line-height: 16px;
+
+	font-weight: 600;
 }
 p{
-	margin: 0px;
 	color: #333;
 }
-.bold-16px{
-    font-size: 16px;
-    line-height: 16px;
-
-    font-weight: 700;
+.font-medium{
+	font-weight: 500;
 }
 .color-red{
     color: #962932;
+}
+.bold-16px{
+	font-size: 16px;
+	line-height: 18px;
+
+	font-weight: bold;
 }
 /* ------------------------ */
 
@@ -178,7 +209,7 @@ p{
 	padding: 10px 0px;
 }
 .TopNavigation .nav a.nav-link{
-	color: black;
+	color: inherit;
 	padding: 0px 10px;
 }
 .TopNavigation .nav a.nav-link:hover{
@@ -386,8 +417,14 @@ p.SliderText{
 /* ------------------------ */
 
 /* ContactsBlock styles */
+.ContactInfo{
+	font-size: 14px;
+	font-weight: bold;
+}
 .gray-12px{
 	font-size: 12px;
+	font-weight: normal;
+
 	line-height: 18px;
 
 	color: #707070;

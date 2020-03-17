@@ -30,10 +30,10 @@ function Header() {
                         </Col>
                         <Col>
                             <Row className="justify-content-end">
-                                <div className="TopNavigation-ContactPhone margin-right-40">
+                                <div className="margin-right-40 font-medium">
                                     <p>+38 (000) 000 00 00</p>
                                 </div>
-                                <div className="TopNavigation-ExchangeRate">
+                                <div>
                                     <p>1 USD = 24,95 UAH ; 1 EUR = 1,10 USD</p>
                                 </div>
                             </Row>

@@ -1,0 +1,83 @@
+
+/* importing Qanelas font*/
+
+    @font-face{
+        font-family: 'Qanelas';
+        src: url('./Qanelas-Light.ttf') format('truetype');
+        font-weight: 300;
+        font-style: normal;
+    }
+    @font-face{
+        font-family: 'Qanelas';
+        src: url('./Qanelas-Regular.ttf') format('truetype');
+        font-weight: 400;
+        font-style: normal;
+    }
+    @font-face{
+        font-family: 'Qanelas';
+        src: url('./Qanelas-Medium.ttf') format('truetype');
+        font-weight: 500;
+        font-style: normal;
+    }
+    @font-face{
+        font-family: 'Qanelas';
+        src: url('./Qanelas-SemiBold.ttf') format('truetype');
+        font-weight: 600;
+        font-style: normal;
+    }
+    @font-face{
+        font-family: 'Qanelas';
+        src: url('./Qanelas-Bold.ttf') format('truetype');
+        font-weight: 700;
+        font-style: normal;
+    }
+
+
+/* Qanelas italic */
+
+    @font-face{
+        font-family: 'Qanelas';
+        src: url('./Qanelas-LightItalic.ttf') format('truetype');
+        font-weight: 300;
+        font-style: italic;
+    }
+    @font-face{
+        font-family: 'Qanelas';
+        src: url('./Qanelas-RegularItalic.ttf') format('truetype');
+        font-weight: 400;
+        font-style: italic;
+    }
+    @font-face{
+        font-family: 'Qanelas';
+        src: url('./Qanelas-MediumItalic.ttf') format('truetype');
+        font-weight: 500;
+        font-style: italic;
+    }
+    @font-face{
+        font-family: 'Qanelas';
+        src: url('./Qanelas-SemiBoldItalic.ttf') format('truetype');
+        font-weight: 600;
+        font-style: italic;
+    }
+    @font-face{
+        font-family: 'Qanelas';
+        src: url('./Qanelas-BoldItalic.ttf') format('truetype');
+        font-weight: 700;
+        font-style: italic;
+    }
+
+
+/* importing Fact-expanded font */
+
+    @font-face{
+        font-family: 'Fact';
+        src: url('./Fact-ExpandedLight.ttf') format('truetype');
+        font-weight: 300;
+        font-style: normal;
+    }
+    @font-face{
+        font-family: 'Fact';
+        src: url('./Fact-ExpandedBold.ttf') format('truetype');
+        font-weight: 700;
+        font-style: normal;
+    }
