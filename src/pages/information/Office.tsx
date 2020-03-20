@@ -5,7 +5,7 @@ import React from 'react';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
 import OfficeImages from '../../components/office/OfficeImages';
-import Breadcrumbs from '../../components/Breadcrumbs';
+import Breadcrumbs from '../../components/navigation/Breadcrumbs';
 
 
 function Office() {

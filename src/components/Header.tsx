@@ -1,6 +1,6 @@
 import React from 'react';
-import { Container, Row, Col, Form, InputGroup} from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+import { Container, Row, Col, Form, InputGroup, Dropdown} from 'react-bootstrap';
+import { Link, NavLink } from 'react-router-dom';
 
 
 // importing Header components
@@ -76,26 +76,47 @@ function Header() {
                                         </Form.Group>
                                     </Form.Row>
                                 </div>
-                                <div className="MainNavigation-Profile d-flex margin-left-20 margin-right-20">
+								<div className="MainNavigation-Profile d-flex margin-left-20 margin-right-20">
                                     <div className="span margin-right-10">
-                                        <img alt="" src={profile} />
+                                        <NavLink to="/profile"><img alt="" src={profile} /></NavLink>
                                     </div>
                                     <div className="span align-self-center">
-                                        <p className="bold-16px">Personal</p>
-                                        <p>profile</p>
+										<NavLink to="/profile">
+											<b className="bold-16px">
+											Personal
+											</b>
+											<br />
+											profile
+										</NavLink>
                                     </div>
                                 </div>
                                 <div className="MainNavigation-Cart d-flex margin-left-20 margin-right-20">
                                     <div className="span margin-right-10">
-                                        <img alt="" src={cart} />
+                                        <NavLink to="/cart"><img alt="" src={cart} /></NavLink>
                                     </div>
                                     <div className="span align-self-center">
-                                        <p className="bold-16px">Shopping</p>
-                                        <p>cart</p>
+										<NavLink to="/cart">
+	                                        <b className="bold-16px">
+											Shopping
+											</b>
+											<br />
+	                                        cart
+										</NavLink>
                                     </div>
                                 </div>
+
                                 <div className="MainNavigation-LanguageSwitcher align-self-center margin-left-20">
-                                    <p className="bold-16px color-red">RU</p>
+									<Dropdown>
+										<Dropdown.Toggle id="dropdown-custom-components">
+											RU
+										</Dropdown.Toggle>
+
+										<Dropdown.Menu>
+											<Dropdown.Item href="#/action-1">RU</Dropdown.Item>
+											<Dropdown.Item href="#/action-2">EN</Dropdown.Item>
+											<Dropdown.Item href="#/action-3">DE</Dropdown.Item>
+										</Dropdown.Menu>
+									</Dropdown>
                                 </div>
                             </Row>
                         </Col>

@@ -16,6 +16,7 @@ import Contacts from './pages/information/Contacts';
 import Catalog from './pages/Catalog';
 import Profile from './pages/Profile';
 import Cart from './pages/Cart';
+import Table from './pages/Table';
 
 function App() {
   return (
@@ -30,8 +31,9 @@ function App() {
             <Route component={ForBusiness} path="/business" />
             <Route component={Contacts} path="/contacts" />
             <Route component={Catalog} path="/catalog" />
-            <Route component={Profile} path="/profile" exact />
-            <Route component={Cart} path="/cart" exact />
+            <Route component={Profile} path="/profile"  />
+            <Route component={Cart} path="/cart" />
+            <Route component={Table} path="/table" />
           </Switch>
       </BrowserRouter>
   );

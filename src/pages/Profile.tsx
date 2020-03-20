@@ -1,4 +1,5 @@
 import React from 'react';
+import { Container } from 'react-bootstrap';
 
 // importing Mainpage components
 import Header from '../components/Header';
@@ -8,7 +9,9 @@ function Profile() {
 	return(
 		<body>
 			<Header />
-                <h1>Profile</h1>
+				<Container>
+					<h1>Profile</h1>
+				</Container>
 			<Footer />
 		</body>
 	);

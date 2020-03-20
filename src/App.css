@@ -73,6 +73,17 @@ p{
 
 	font-weight: bold;
 }
+a{
+	color: inherit;
+	text-decoration: none;
+
+}
+a:hover{
+	color: #b11622;
+	text-decoration: none;
+
+	transition: 0.1s ease;
+}
 /* ------------------------ */
 
 /* bootstrap corrections */
@@ -467,7 +478,7 @@ footer .nav a.nav-link{
 	padding: 0px 10px;
 }
 footer .nav a.nav-link:hover{
-	color: #cdcbcb;
+	color: #dedede;
 	transition: all 0.1s ease;
 }
 footer p{
@@ -578,4 +589,144 @@ footer p{
 .Breadcrumbs span:first-child:before{
 	content: '';
 	padding: 0px;
+}
+/* ------------------------ */
+
+/* Category styles*/
+.categoryBlocks .col{
+	margin: 0px 10px;
+	margin-bottom: 30px;
+}
+.categoryBlock{
+	border: 1px solid #DEDEDE;
+	width: 100%;
+
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.categoryBlock:hover{
+	border: 1px solid #cdcbcb;
+	transition: 0.1s ease;
+}
+.categoryBlock a{
+	font-weight: 600;
+	text-transform: capitalize;
+	text-align: center;
+
+	color: inherit;
+}
+
+/* ------------------------ */
+
+/* LanguageSwitcher styles*/
+ .dropdown-toggle{
+	background: none !important;
+	border: none !important;
+	box-shadow: none !important;
+
+	color: #962932 !important;
+	font-weight: bold;
+
+	padding: 0;
+}
+ .dropdown-toggle:hover{
+	color: #B11622 !important;
+}
+.dropdown-toggle:active{
+	color: #b11622 !important;
+}
+.dropdown-toggle:focus{
+	color: #b11622 !important;
+}
+.dropdown-menu{
+	min-width: auto;
+}
+.dropdown-item:hover{
+	background: #f2f2f2 !important;
+}
+.dropdown-item:focus{
+	background: #b11622 !important;
+}
+/* ------------------------ */
+
+/* Table styles*/
+.table{
+	margin-bottom: 0;
+
+	font-size: 14px;
+	color: inherit;
+
+	border: 1px solid #dedede;
+}
+.table thead th{
+	border-bottom: 1px solid #DEDEDE;
+	border-left: 1px solid #dedede;
+	background: #eeeeee;
+}
+.table thead th, .table thead td{
+	padding: 10px 15px;
+}
+.table th, .table td{
+	padding: 7px 15px;
+}
+.table td{
+	border-top: 1px solid #dedede;
+	border-left: 1px solid #dedede;
+}
+.table tr:nth-child(even){
+	background: #eeeeee;
+}
+.nav-tabs .nav-link{
+	background: #fff;
+	border: 1px solid #962932;
+	border-radius: 0;
+
+	padding: 10px 40px;
+
+	color: inherit;
+	font-weight: bold;
+
+}
+.nav-tabs .nav-link:hover{
+	border: 1px solid #962932;
+	background: #f8f8f8;
+}
+.nav-tabs .nav-link.active{
+	background: #962932;
+	border: 1px solid #962932;
+
+	color: white;
+	border-radius: 0;
+}
+/* ------------------------ */
+
+/* Table SearchBox styles */
+.search-input-custom{
+	background: #fff;
+
+	border: 1px solid #dedede;
+	border-right: 0;
+	padding: 0px 20px;
+
+
+	color: white;
+	height: 37px;
+
+	font-size: 14px;
+}
+.input-group-text{
+	background: #962932;
+
+	border: 1px solid #962932;
+	padding: 0px 40px;
+
+
+	color: white;
+	line-height: 35px;
+
+	font-weight: bold;
+}
+.input-group-text:hover{
+	background: #b11622;
+	transition: 0.1s ease;
 }

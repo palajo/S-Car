@@ -7,8 +7,8 @@ function SidebarNavigation() {
         <div>
 			<Nav className="flex-column SidebarMenu">
 				<NavLink to="/catalog" className="nav-link">Catalog</NavLink>
-				<NavLink to="#" className="nav-link">My profile</NavLink>
-				<NavLink to="#" className="nav-link">Cart</NavLink>
+				<NavLink to="/profile" className="nav-link">My profile</NavLink>
+				<NavLink to="/cart" className="nav-link">Cart</NavLink>
 				<NavLink to="/about" className="nav-link">About us</NavLink>
                 <NavLink to="/office" className="nav-link">Our office</NavLink>
                 <NavLink to="/delivery" className="nav-link">Delivery</NavLink>
