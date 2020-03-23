@@ -3,6 +3,9 @@ import { NavLink } from 'react-router-dom';
 import { Container, Row } from 'react-bootstrap';
 import withBreadcrumbs from "react-router-breadcrumbs-hoc";
 
+// importing Breadcrumbs component styles
+import '../../styles/breadcrumbs.scss';
+
 
 const Breadcrumbs = withBreadcrumbs()(({ breadcrumbs }) => (
     <Container>

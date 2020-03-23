@@ -2,6 +2,11 @@ import React from 'react';
 import { Container, Row, Col, Form, InputGroup, Dropdown} from 'react-bootstrap';
 import { Link, NavLink } from 'react-router-dom';
 
+// importing Header components styles
+import '../styles/sidebar.scss';
+import '../styles/header.scss';
+import '../styles/language-switcher.scss';
+import '../styles/margins.scss';
 
 // importing Header components
 import Sidebar from './Sidebar';

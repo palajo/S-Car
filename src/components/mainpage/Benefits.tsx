@@ -17,7 +17,7 @@ type BenefitProps = {
 export const Benefit = ({ benefitPosition, benefitIcon, benefitDescription }: BenefitProps) =>
     <Col className="align-self-start">
         <Row className={benefitPosition}>
-            <div className="IconImage">
+            <div className="z-index-1">
                 <img alt="" src={benefitIcon} className="IconIcon" height="84px" />
             </div>
             <div className="HR align-self-center"></div>

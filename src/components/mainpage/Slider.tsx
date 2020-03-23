@@ -2,6 +2,10 @@ import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 
 
+// importing Slider components styles
+import '../../styles/mainpage/slider.scss';
+
+
 function Slider() {
 	return(
         <Container fluid className="Slider margin-bottom-50">

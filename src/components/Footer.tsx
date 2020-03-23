@@ -2,6 +2,10 @@ import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import FooterNavigation from './navigation/FooterNavigation';
 
+// importing Footer components styles
+import '../styles/footer.scss';
+
+
 function Footer() {
 	return(
         <footer>

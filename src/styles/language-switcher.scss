@@ -1,0 +1,26 @@
+.dropdown{
+    .dropdown-toggle{
+        background: none !important;
+        border: none !important;
+        box-shadow: none !important;
+
+        color: #962932 !important;
+        font-weight: bold;
+
+        padding: 0;
+
+        &:hover, &:active, &:focus{
+            color: #B11622 !important;
+        }
+    }
+    .dropdown-menu{
+    	min-width: auto;
+
+        .dropdown-item:hover{
+        	background: #f2f2f2 !important;
+        }
+        .dropdown-item:focus{
+            background: #B11622 !important;
+        }
+    }
+}

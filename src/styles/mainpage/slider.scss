@@ -1,0 +1,30 @@
+/* Slider styles */
+.Slider{
+	border-bottom: 1px solid #962932;
+}
+.SliderBackground{
+	background: url(../../static/images/slider-image.png);
+	background-size: contain;
+	background-position: right;
+	background-repeat: no-repeat;
+	padding: 120px 0px;
+
+}
+.SliderHeading{
+	font-size: 36px;
+	line-height: 48px;
+
+	text-transform: uppercase;
+}
+.Slider hr{
+	background: #707070;
+	width: 100%;
+	margin: 10px 0px;
+}
+p.SliderText{
+	font-size: 16px;
+	line-height: 24px;
+
+	margin-bottom: 20px;
+}
+/* ------------------------ */

@@ -2,7 +2,11 @@ import React from 'react';
 import { Container, Row, Col, Tabs, Tab, Form, InputGroup } from 'react-bootstrap';
 
 
-// importing Mainpage components
+// importing Table components styles
+import '../styles/table.scss';
+
+
+// importing Table components
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import Breadcrumbs from '../components/navigation/Breadcrumbs';

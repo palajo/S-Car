@@ -1,0 +1,42 @@
+.category{
+	.categoryBlock{
+		border: 1px solid #dedede;
+
+		height: 190px;
+
+		margin-left: 0;
+		margin-bottom: 20px;
+
+		&.categoryBack{
+			border: 2px solid #962932;
+			&:hover{
+				border: 2px solid #B11622;
+				transition: 0.1s ease;
+			}
+		}
+		&:hover{
+			border: 1px solid #cdcbcb;
+			transition: 0.1s ease;
+		}
+		.col{
+			.row{
+				justify-content: center;
+			}
+		}
+		.category-image{
+			margin: 0px 10px;
+			margin-bottom: 20px;
+		}
+		.categoryTitle{
+			font-weight: 600;
+			text-transform: capitalize;
+			text-align: center;
+
+			color: inherit;
+		}
+		&:hover .categoryTitle{
+			color: #B11622;
+			transition: 0.1s ease;
+		}
+	}
+}

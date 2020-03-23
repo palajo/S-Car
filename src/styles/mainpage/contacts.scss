@@ -1,0 +1,22 @@
+.ContactInfo{
+	font-size: 14px;
+	font-weight: bold;
+
+	.col{
+		.row{
+			padding: 10px 0px;
+		}
+	}
+	.ContactPhone{
+		font-size: 30px;
+		line-height: 36px;
+	}
+	.gray-12px{
+		font-size: 12px;
+		font-weight: normal;
+
+		line-height: 18px;
+
+		color: #707070;
+	}
+}

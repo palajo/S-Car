@@ -1,0 +1,54 @@
+/* TopNavigation styles */
+.TopNavigation{
+	padding: 10px 0px;
+
+	.nav{
+		a.nav-link{
+			color: inherit;
+			padding: 0px 10px;
+		}
+		a.nav-link:hover{
+			color: #B11622;
+			transition: all 0.1s ease;
+		}
+		a.nav-link:first-child{
+			padding-left: 0px;
+		}
+		a.nav-link:last-child{
+			padding-right: 0px;
+		}
+	}
+}
+/* ------------------------ */
+
+/* MainNavigation styles */
+.MainNavigation{
+	padding: 15px 0px;
+	margin-bottom: 20px;
+
+	border-top: 1px solid #dedede;
+	border-bottom: 1px solid #dedede;
+
+	.form-control{
+		height: 35px;
+		font-size: 12px;
+
+		border: 1px solid #e2e2e2;
+		border-radius: 0px;
+
+		width: 320px;
+		z-index: 0;
+	}
+	.search-input-button{
+		position: absolute;
+		right: -15px;
+		top: -7.5px;
+
+		z-index: 4;
+	}
+	.MainNavigation-Profile:hover, .MainNavigation-Cart:hover{
+		color: #b11622;
+		transition: 0.1s ease;
+	}
+}
+/* ------------------------ */

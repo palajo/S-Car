@@ -2,6 +2,10 @@ import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 
 
+// importing Contact components styles
+import '../../styles/mainpage/contacts.scss';
+
+
 // importing Contact icons
 import iconClock from '../../static/images/icon-clock.svg';
 import iconLocation from '../../static/images/icon-location.svg';

@@ -1,0 +1,155 @@
+@import './styles/header.scss';
+
+
+html{
+	position: relative;
+	min-height: 100%;
+}
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	font-family: 'Qanelas';
+	font-weight: normal;
+
+	font-size: 16px;
+	line-height: 24px;
+
+	color: #1A1414;
+
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+header, footer{
+	font-size: 14px;
+	line-height: 16px;
+}
+
+/* font styles*/
+h1, h2, h3, h4, h5, p{
+	margin: 0px;
+}
+h1, h2, h3{
+	font-weight: 700;
+}
+h4, h5{
+	font-weight: 600;
+}
+h1{
+	font-size: 36px;
+	line-height: 48px;
+}
+h2{
+	font-size: 24px;
+	line-height: 30px;
+}
+h3{
+	font-size: 18px;
+	line-height: 24px;
+}
+h4{
+	font-size: 16px;
+	line-height: 18px;
+}
+h5{
+	font-size: 14px;
+	line-height: 16px;
+}
+p{
+	color: #333;
+}
+.font-medium{
+	font-weight: 500;
+}
+.color-red{
+    color: #962932;
+}
+.bold-16px{
+	font-size: 16px;
+	line-height: 18px;
+
+	font-weight: bold;
+}
+a{
+	color: inherit;
+	text-decoration: none;
+	&:hover{
+		color: #b11622;
+		text-decoration: none;
+
+		transition: 0.1s ease;
+	}
+}
+/* ------------------------ */
+
+/* bootstrap corrections */
+.form-group{
+    margin: 0px;
+}
+.container{
+	max-width: 1366px;
+}
+/* ------------------------ */
+
+
+
+/* Button styles */
+.button{
+	display: inline-block;
+
+	text-align: center;
+	font-size: 14px;
+	font-weight: 600;
+	text-transform: uppercase;
+
+	line-height: 50px;
+	width: 240px;
+	margin-left: 15px;
+
+	color: white !important;
+
+	background: none;
+	outline: none;
+	border: none;
+	cursor: pointer;
+
+	position: relative;
+	z-index: 1;
+
+	&::before{
+		content: '';
+
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+
+		background: linear-gradient(to right, #B11622 50%, #962932 50%);
+		background-size: 200% 100%;
+		background-position: right bottom;
+
+		transition:all 0.3s ease;
+		transform: skew(-150deg);
+		z-index: -1;
+	}
+	&:hover::before{
+		background-position: left bottom;
+	}
+}
+
+/* ------------------------ */
+.z-index-1{
+	z-index: 1;
+}
+.HR{
+	position: absolute;
+
+	width: 100%;
+	height: 1px;
+
+	background: #dfe9eb;
+
+}

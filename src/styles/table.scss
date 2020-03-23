@@ -1,0 +1,92 @@
+/* Table styles*/
+.table{
+	margin-bottom: 0;
+
+	font-size: 14px;
+	color: inherit;
+
+	border: 1px solid #dedede;
+
+	thead{
+		th{
+			border-bottom: 1px solid #DEDEDE;
+			border-left: 1px solid #dedede;
+			background: #eeeeee;
+		}
+		th, td{
+			padding: 10px 15px;
+		}
+	}
+
+	th, td{
+		padding: 7px 15px;
+	}
+	td{
+		border-top: 1px solid #dedede;
+		border-left: 1px solid #dedede;
+
+	}
+	tr:nth-child(even){
+		background: #eeeeee;
+	}
+}
+.nav-tabs{
+	.nav-link{
+		background: #fff;
+		border: 1px solid #962932;
+		border-radius: 0;
+
+		padding: 10px 40px;
+
+		color: inherit;
+		font-weight: bold;
+
+		&:hover{
+			border: 1px solid #962932;
+			background: #f0f0f0;
+		}
+		&.active{
+			background: #962932;
+			border: 1px solid #962932;
+
+			color: white;
+			border-radius: 0;
+
+		}
+	}
+}
+/* ------------------------ */
+
+/* Table SearchBox styles */
+.search-input-custom{
+	background: #fff;
+
+	border: 1px solid #dedede;
+	border-right: 0;
+	padding: 0px 20px;
+
+	width: 360px;
+
+	color: white;
+	height: 37px;
+
+	font-size: 14px;
+}
+.input-group-text{
+	background: #962932;
+
+	border: 1px solid #962932;
+	padding: 0px 40px;
+
+
+	color: white;
+	line-height: 35px;
+
+	font-weight: bold;
+
+	&:hover{
+		background: #b11622;
+		transition: 0.1s ease;
+	}
+}
+/* ------------------------ */

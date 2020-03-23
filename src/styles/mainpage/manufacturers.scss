@@ -1,0 +1,62 @@
+/* Brand styles */
+.row{
+	.BrandBackground{
+		display: inline-block;
+
+		font-size: 14px;
+		font-weight: 600;
+		text-transform: uppercase;
+
+		color: #333;
+		margin: 5px 10px;
+
+		line-height: 45px;
+
+		background: none;
+		outline: none;
+		border: none;
+
+		position: relative;
+		z-index: 1;
+		cursor: pointer;
+
+		::before {
+		    content: '';
+
+		    position: absolute;
+		    top: 0;
+		    right: 0;
+		    bottom: 0;
+		    left: 0;
+
+			border: 1px solid #962932;
+
+		    background: linear-gradient(to right, #B11622 50%, #fff 50%);
+			background-size: 200% 100%;
+			background-position: right bottom;
+
+			transition: all 0.4s ease;
+		    transform: skew(150deg);
+		    z-index: -1;
+		}
+		&:hover {
+			color: white;
+			transition: 0.4s ease;
+			img{
+				filter: invert(1);
+				transition: 0.4s ease;
+			}
+		}
+		&:hover ::before{
+			background-position: left bottom;
+		}
+	}
+}
+#reverse.row{
+	.BrandBackground{
+		::before {
+			transform: skew(-150deg);
+		}
+	}
+}
+/* ------------------------ */

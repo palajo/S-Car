@@ -1,0 +1,28 @@
+.Breadcrumbs{
+	span{
+		a{
+			color: inherit;
+			text-transform: uppercase;
+			text-decoration: none;
+			&:hover{
+				color: #B11622;
+				text-decoration: underline;
+				transition: 0.1s ease;
+			}
+		}
+		&:last-child{
+			a{
+				color: #962932;
+			}
+		}
+		&::before{
+			content: '-';
+			padding: 0px 10px;
+		}
+		&:first-child:before{
+			content: '';
+			padding: 0px;
+
+		}
+	}
+}

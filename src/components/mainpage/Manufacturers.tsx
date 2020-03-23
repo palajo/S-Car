@@ -2,6 +2,10 @@ import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 
 
+// importing Manufacturer components styles
+import '../../styles/mainpage/manufacturers.scss';
+
+
 // importing Manufacturers logos
 import volkswagen from '../../static/images/manufacturers/volkswagen.svg';
 

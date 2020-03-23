@@ -1,0 +1,25 @@
+/* Footer styles */
+footer{
+	position: absolute;
+	width: 100%;
+
+	bottom: -36px;
+	line-height: 36px;
+
+	background: #962932;
+
+	.nav{
+		a.nav-link{
+			color: white;
+			padding: 0px 10px;
+		}
+		a.nav-link:hover{
+			color: #dedede;
+			transition: all 0.1s ease;
+		}
+	}
+	p{
+		color: white;
+	}
+}
+/* ------------------------ */
