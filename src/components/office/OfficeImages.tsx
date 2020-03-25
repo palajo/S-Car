@@ -12,16 +12,18 @@ type OfficeProps = {
 }
 
 export const Office = ({ officeImage }: OfficeProps) =>
-    <Col className="m-2">
+    <Col xs={12} md={4} xl={true}>
         <Row>
-            <img src={officeImage} width="100%" alt="something" />
+            <Col>
+                <img src={officeImage} width="100%" alt="something" />
+            </Col>
         </Row>
     </Col>
 
 
 function OfficeImages() {
 	return(
-		<Container>
+		<Container className="office">
             <Row className="margin-bottom-20">
                 <Office officeImage={placeholder} />
                 <Office officeImage={placeholder} />

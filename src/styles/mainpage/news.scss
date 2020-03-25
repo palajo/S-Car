@@ -1,6 +1,7 @@
 /* NewsBlock styles */
 .NewsBlock img{
 	margin-bottom: 15px;
+	width: 100%;
 }
 .NewsBlock p{
 	font-size: 20px;
@@ -8,13 +9,8 @@
 
 	font-weight: 600;
 }
-.NewsBlock .col{
+.NewsBlock > .col-lg-3 > .row > .col{
 	margin: 0px 10px;
 }
-.NewsBlock .col:first-child{
-	margin-left: 0px;
-}
-.NewsBlock .col:last-child{
-	margin-right: 0px;
-}
+
 /* ------------------------ */

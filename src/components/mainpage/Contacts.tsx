@@ -42,25 +42,25 @@ function Contacts() {
 				<h2>Contacts</h2>
 			</Row>
 			<Row className="ContactsBlock">
-				<Col className="">
+				<Col xs={12} lg={true}>
 					<Row>
 						<p className="ContactPhone margin-bottom-20">+38 (000) 000 00 00</p>
 					</Row>
 					<Row className="ContactInfo">
-						<Col>
+						<Col xs={12} md={6} lg={true}>
 							<Contact contactIcon={iconMessage} contactTitle="Ask a question:" contactText="info@s-car.com" />
 							<Contact contactIcon={iconMessage} contactTitle="For partners:" contactText="partners@s-car.com" />
-							<Contact contactIcon={iconLocation} contactTitle="Address:" contactText="28 Park Road London WC36 7MB" />
+							<Contact contactIcon={iconLocation} contactTitle="Address:" contactText="28 Park Road London" />
 						</Col>
-						<Col>
+						<Col xs={12} md={6} lg={true}>
 							<Contact contactIcon={iconClock} contactTitle="Warehouse:" contactText="Mn. - Fr.: 9:00 - 18:00" />
 							<Contact contactIcon={iconClock} contactTitle="Working hours:" contactText="Mn. - Fr.: 9:00 - 18:00" />
 							<Contact contactIcon={iconMessage} contactTitle="Skype:" contactText="@scarmanager" />
 						</Col>
 					</Row>
 				</Col>
-				<Col>
-					<img alt="" src={Map} width="100%" height="300"/>
+				<Col xs={12} lg={true}>
+					<img alt="" src={Map} width="100%" className="margin-top-20-mobile"/>
 				</Col>
 			</Row>
 		</Container>

@@ -18,6 +18,11 @@ import Profile from './pages/Profile';
 import Cart from './pages/Cart';
 import Table from './pages/Table';
 
+import './styles/adaptation/mobile.scss';
+import './styles/adaptation/tablet.scss';
+import './styles/adaptation/desktop.scss';
+
+
 function App() {
   return (
       <BrowserRouter>

@@ -24,3 +24,15 @@
         }
     }
 }
+
+.sidenav{
+    .dropdown{
+        .dropdown-toggle{
+            color: white !important;
+            &:hover, &:active, &:focus{
+                color: white !important;
+            }
+        }
+    }
+
+}

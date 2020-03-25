@@ -28,7 +28,7 @@ export const Manufacturer = ({ manufacturerLogo, manufacturerTitle }: Manufactur
 // creating brands container
 function Manufacturers() {
 	return(
-        <Container className="margin-bottom-50">
+        <Container className="margin-bottom-50 d-none d-lg-block">
             <Row>
 				<Manufacturer manufacturerLogo={volkswagen} manufacturerTitle="Volkswagen" />
 				<Manufacturer manufacturerLogo={volkswagen} manufacturerTitle="Volkswagen" />

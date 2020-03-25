@@ -11,7 +11,7 @@ function Slider() {
         <Container fluid className="Slider margin-bottom-50">
             <Container className="SliderBackground">
                 <Row>
-                    <Col lg={4} className="align-self-center">
+                    <Col lg={4} md={6} className="align-self-center">
                         <Row>
                             <h1 className="SliderHeading">
                                 Searching for <br />

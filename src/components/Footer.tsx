@@ -11,13 +11,13 @@ function Footer() {
         <footer>
             <Container>
                 <Row className="justify-content-between">
-                    <Col>
+                    <Col className="d-none d-lg-block">
                         <Row>
                             <FooterNavigation />
                         </Row>
                     </Col>
-                    <Col>
-                        <Row className="justify-content-end">
+                    <Col className="max-width-300">
+                        <Row className="justify-content-start justify-content-lg-end">
                             <p>©S-CAR.COM.UA 2020</p>
                         </Row>
                     </Col>

@@ -30,7 +30,7 @@ function PageContacts() {
 	return(
 		<Container>
             <Row className="margin-bottom-50">
-                <Col>
+                <Col xs={12} lg={true}>
                     <Row className="margin-bottom-20">
                         <h2 className="text-uppercase">Kiev</h2>
                     </Row>
@@ -40,12 +40,12 @@ function PageContacts() {
                                 <p><b>+38 (000) 000 00 00</b></p>
                             </Row>
                             <Row className="ContactInfo">
-                                <Col>
+                                <Col xs={12} md={6} lg={true}>
                                     <Contact contactIcon={iconMessage} contactTitle="Ask a question:" contactText="info@s-car.com" />
                                     <Contact contactIcon={iconMessage} contactTitle="For partners:" contactText="partners@s-car.com" />
                                     <Contact contactIcon={iconLocation} contactTitle="Address:" contactText="28 Park Road London WC36 7MB" />
                                 </Col>
-                                <Col>
+                                <Col xs={12} md={6} lg={true}>
                                     <Contact contactIcon={iconClock} contactTitle="Warehouse:" contactText="Mn. - Fr.: 9:00 - 18:00" />
                                     <Contact contactIcon={iconClock} contactTitle="Working hours:" contactText="Mn. - Fr.: 9:00 - 18:00" />
                                     <Contact contactIcon={iconMessage} contactTitle="Skype:" contactText="@scarmanager" />
@@ -54,7 +54,7 @@ function PageContacts() {
                         </Col>
                     </Row>
                 </Col>
-                <Col>
+                <Col xs={12} lg={true}>
                     <Row className="margin-bottom-20">
                         <h2 className="text-uppercase">Kharkiv</h2>
                     </Row>
@@ -64,12 +64,12 @@ function PageContacts() {
                                 <p><b>+38 (000) 000 00 00</b></p>
                             </Row>
                             <Row className="ContactInfo">
-                                <Col>
+                                <Col xs={12} md={6} lg={true}>
                                     <Contact contactIcon={iconMessage} contactTitle="Ask a question:" contactText="info@s-car.com" />
                                     <Contact contactIcon={iconMessage} contactTitle="For partners:" contactText="partners@s-car.com" />
                                     <Contact contactIcon={iconLocation} contactTitle="Address:" contactText="28 Park Road London WC36 7MB" />
                                 </Col>
-                                <Col>
+                                <Col xs={12} md={6} lg={true}>
                                     <Contact contactIcon={iconClock} contactTitle="Warehouse:" contactText="Mn. - Fr.: 9:00 - 18:00" />
                                     <Contact contactIcon={iconClock} contactTitle="Working hours:" contactText="Mn. - Fr.: 9:00 - 18:00" />
                                     <Contact contactIcon={iconMessage} contactTitle="Skype:" contactText="@scarmanager" />
@@ -80,7 +80,7 @@ function PageContacts() {
                 </Col>
             </Row>
             <Row className="margin-bottom-50">
-                <Col>
+                <Col xs={12} lg={true}>
                     <Row className="margin-bottom-20">
                         <h2 className="text-uppercase">Lviv</h2>
                     </Row>
@@ -90,12 +90,12 @@ function PageContacts() {
                                 <p><b>+38 (000) 000 00 00</b></p>
                             </Row>
                             <Row className="ContactInfo">
-                                <Col>
+                                <Col xs={12} md={6} lg={true}>
                                     <Contact contactIcon={iconMessage} contactTitle="Ask a question:" contactText="info@s-car.com" />
                                     <Contact contactIcon={iconMessage} contactTitle="For partners:" contactText="partners@s-car.com" />
                                     <Contact contactIcon={iconLocation} contactTitle="Address:" contactText="28 Park Road London WC36 7MB" />
                                 </Col>
-                                <Col>
+                                <Col xs={12} md={6} lg={true}>
                                     <Contact contactIcon={iconClock} contactTitle="Warehouse:" contactText="Mn. - Fr.: 9:00 - 18:00" />
                                     <Contact contactIcon={iconClock} contactTitle="Working hours:" contactText="Mn. - Fr.: 9:00 - 18:00" />
                                     <Contact contactIcon={iconMessage} contactTitle="Skype:" contactText="@scarmanager" />
@@ -104,7 +104,7 @@ function PageContacts() {
                         </Col>
                     </Row>
                 </Col>
-                <Col>
+                <Col xs={12} lg={true}>
                     <Row className="margin-bottom-20">
                         <h2 className="text-uppercase">Dnipro</h2>
                     </Row>
@@ -114,12 +114,12 @@ function PageContacts() {
                                 <p><b>+38 (000) 000 00 00</b></p>
                             </Row>
                             <Row className="ContactInfo">
-                                <Col>
+                                <Col xs={12} md={6} lg={true}>
                                     <Contact contactIcon={iconMessage} contactTitle="Ask a question:" contactText="info@s-car.com" />
                                     <Contact contactIcon={iconMessage} contactTitle="For partners:" contactText="partners@s-car.com" />
                                     <Contact contactIcon={iconLocation} contactTitle="Address:" contactText="28 Park Road London WC36 7MB" />
                                 </Col>
-                                <Col>
+                                <Col xs={12} md={6} lg={true}>
                                     <Contact contactIcon={iconClock} contactTitle="Warehouse:" contactText="Mn. - Fr.: 9:00 - 18:00" />
                                     <Contact contactIcon={iconClock} contactTitle="Working hours:" contactText="Mn. - Fr.: 9:00 - 18:00" />
                                     <Contact contactIcon={iconMessage} contactTitle="Skype:" contactText="@scarmanager" />

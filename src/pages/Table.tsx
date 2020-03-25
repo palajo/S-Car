@@ -60,7 +60,7 @@ function Table() {
                     </Row>
                     <Tabs defaultActiveKey="europe" id="uncontrolled-tab-example">
                         <Tab eventKey="europe" title="Европа">
-                            <table className="table">
+                            <table className="table-responsive-sm">
                                 <thead>
                                     <tr>
                                         <th scope="col">Каталог</th>
@@ -91,7 +91,7 @@ function Table() {
                             </table>
                         </Tab>
                         <Tab eventKey="china" title="Китай">
-                            <table className="table">
+                            <table className="table-responsive-sm">
                                 <thead>
                                     <tr>
                                         <th scope="col">Каталог</th>

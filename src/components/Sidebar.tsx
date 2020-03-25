@@ -1,5 +1,6 @@
 import React from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
+import { Container, Row, Col, Dropdown } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 
 // importing Sidebar components
@@ -23,9 +24,24 @@ function Sidebar() {
             <Container fluid>
                 <Row className="margin-bottom-30 padding-left-right-20">
                     <Col>
-                        <img alt="" src={mainmenuwhite} height="50px" className="menuToggle margin-right-20" onClick={closeNav} />
-                        <img alt="" src={logowhite} height="50px" />
-                    </Col>
+						<Row className="no-margin-row">
+							<img alt="" src={mainmenuwhite} className="icon menuToggle margin-right-20" onClick={closeNav} />
+							<Link to="/"><img alt="" src={logowhite} className="icon" /></Link>
+							<div className="MainNavigation-LanguageSwitcher align-self-center margin-left-20 d-block d-xl-none">
+								<Dropdown>
+									<Dropdown.Toggle id="dropdown-custom-components">
+										RU
+									</Dropdown.Toggle>
+
+									<Dropdown.Menu>
+										<Dropdown.Item href="#/action-1">RU</Dropdown.Item>
+										<Dropdown.Item href="#/action-2">EN</Dropdown.Item>
+										<Dropdown.Item href="#/action-3">DE</Dropdown.Item>
+									</Dropdown.Menu>
+								</Dropdown>
+							</div>
+						</Row>
+					</Col>
                 </Row>
                 <Row>
                     <Col>

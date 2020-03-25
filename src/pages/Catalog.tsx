@@ -25,7 +25,7 @@ type categoryProps = {
 }
 
 export const Category = ({ categoryIcon, categoryTitle, categoryLink }: categoryProps) =>
-	<Col xl={2} className="category">
+	<Col xl={2} md={4} xs={12} className="category">
         <NavLink to={categoryLink} >
             <Row className="categoryBlock align-self-center">
                 <Col className="align-self-center">
@@ -43,7 +43,7 @@ export const Category = ({ categoryIcon, categoryTitle, categoryLink }: category
 
 // get back to categories
 export const CategoryBack = ({ categoryIcon, categoryTitle, categoryLink }: categoryProps) =>
-	<Col xl={2} className="category">
+	<Col xl={2} md={4} xs={12} className="category">
         <NavLink to={categoryLink} >
             <Row className="categoryBlock categoryBack align-self-center">
                 <Col className="align-self-center">

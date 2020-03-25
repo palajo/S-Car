@@ -36,14 +36,14 @@ function Header() {
             <Container fluid className="TopNavigation">
                 <Container>
                     <Row className="justify-content-between">
-                        <Col>
-                            <Row>
+                        <Col lg={7} className="d-none d-lg-block">
+                            <Row >
                                 <HeaderNavigation />
                             </Row>
                         </Col>
                         <Col>
-                            <Row className="justify-content-end">
-                                <div className="margin-right-40 font-medium">
+                            <Row className="justify-content-center justify-content-lg-end">
+                                <div className="margin-right-40 font-medium d-none d-md-block d-lg-block">
                                     <p>+38 (000) 000 00 00</p>
                                 </div>
                                 <div>
@@ -57,35 +57,42 @@ function Header() {
             <Container fluid className="MainNavigation">
                 <Container>
                     <Row className="justify-content-between">
-                        <Col xl={3}>
+                        <Col className="max-width-300">
                             <Row className="justify-content-start">
                                 <div className="MainNavigation-Menu align-self-center margin-right-20">
-                                    <img alt="" src={mainmenu} className="menuToggle" onClick={openNav} />
+                                    <img alt="" src={mainmenu} className="menuToggle icon margin-right-mobile-10" onClick={openNav} />
                                 </div>
                                 <div className="MainNavigation-Logo">
-                                    <Link to="/"><img alt="" src={logo} height="50" /></Link>
+                                    <Link to="/"><img alt="" src={logo} height="50" className="logo" /></Link>
                                 </div>
                             </Row>
                         </Col>
                         <Col>
                             <Row className="justify-content-end">
-                                <div className="MainNavigation-Search align-self-center margin-right-30">
+                                <div className="MainNavigation-Search align-self-center margin-right-30 d-none d-lg-block">
                                     <Form.Row>
                                         <Form.Group as={Col}>
                                             <InputGroup>
                                                 <Form.Control className="search-input align-self-center" type="text" placeholder="Search here.." />
                                                 <InputGroup.Prepend className="search-input-button">
-                                                    <img alt="" src={search} />
+                                                    <img alt="" src={search} className="icon" />
                                                 </InputGroup.Prepend>
                                             </InputGroup>
                                         </Form.Group>
                                     </Form.Row>
                                 </div>
+								<div className="MainNavigation-SearchToggle d-flex margin-left-20 margin-right-20 d-lg-none">
+									<div className="span margin-right-10">
+										<img alt="" src={search} className="icon" />
+									</div>
+								</div>
 								<div className="MainNavigation-Profile d-flex margin-left-20 margin-right-20">
                                     <div className="span margin-right-10">
-                                        <NavLink to="/profile"><img alt="" src={profile} /></NavLink>
+                                        <NavLink to="/profile">
+											<img alt="" src={profile} className="icon" />
+										</NavLink>
                                     </div>
-                                    <div className="span align-self-center">
+                                    <div className="span align-self-center d-none d-lg-block">
 										<NavLink to="/profile">
 											<b className="bold-16px">
 											Personal
@@ -97,9 +104,11 @@ function Header() {
                                 </div>
                                 <div className="MainNavigation-Cart d-flex margin-left-20 margin-right-20">
                                     <div className="span margin-right-10">
-                                        <NavLink to="/cart"><img alt="" src={cart} /></NavLink>
+                                        <NavLink to="/cart">
+											<img alt="" src={cart} className="icon" />
+										</NavLink>
                                     </div>
-                                    <div className="span align-self-center">
+                                    <div className="span align-self-center d-none d-lg-block">
 										<NavLink to="/cart">
 	                                        <b className="bold-16px">
 											Shopping
@@ -110,7 +119,7 @@ function Header() {
                                     </div>
                                 </div>
 
-                                <div className="MainNavigation-LanguageSwitcher align-self-center margin-left-20">
+                                <div className="MainNavigation-LanguageSwitcher align-self-center margin-left-20 d-none d-xl-block">
 									<Dropdown>
 										<Dropdown.Toggle id="dropdown-custom-components">
 											RU

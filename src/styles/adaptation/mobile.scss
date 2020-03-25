@@ -1,0 +1,135 @@
+@media screen and (max-width: 450px){
+    body{
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    /* Bootstrap styles */
+    .container{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    /* Button styles */
+    .button{
+        width: 180px;
+        line-height: 40px;
+    }
+    .button::before{
+        border: 1px solid #fff;
+    }
+
+
+	/* Header styles */
+	.logo{
+		height: 36px;
+	}
+	.icon{
+		height: 36px;
+	}
+
+    /* Reassign margins */
+    .MainNavigation{
+        .margin-left-20{
+            margin-left: 0px;
+        }
+        .margin-right-20{
+            margin-right: 0px;
+        }
+        .margin-right-10{
+            margin-right: 5px;
+        }
+    }
+	.margin-right-mobile-10{
+		margin-right: 10px;
+	}
+    .margin-top-20-mobile{
+        margin-top: 20px;
+    }
+    .margin-bottom-mobile-30{
+		margin-bottom: 30px;
+	}
+
+    /* Some paddings */
+    .padding-15-mobile{
+        padding: 15px;
+    }
+
+
+	/* Slider styles */
+	.Slider{
+		background: url(../../static/images/slider-background-mobile.jpg);
+		background-size: cover;
+		background-position: 70%;
+		padding: 150px 0px;
+
+		.SliderHeading{
+			font-size: 30px;
+			line-height: 30px;
+
+			color: white;
+		}
+		.SliderText{
+			font-size: 14px;
+			line-height: 14px;
+
+			color: white;
+		}
+		hr{
+			background: white;
+		}
+	}
+
+    /* Benefits styles */
+    .IconIcon{
+        height: 72px;
+    }
+
+    /* News styles */
+	.NewsBlock{
+		.col-xl{
+			margin: 0;
+		}
+	}
+
+	/* Contacts styles */
+	.ContactInfo{
+		.col-xs{
+			.row{
+				padding-bottom: 10px;
+			}
+		}
+	}
+	.ContactPhone{
+		font-size: 24px;
+		line-height: 30px;
+	}
+
+    /* Sibebar styles */
+    .sidenav{
+        width: 300px;
+
+        .SidebarMenu{
+    		a.nav-link{
+    			font-size: 14px;
+            }
+        }
+    }
+
+    /* language switcher */
+    .dropdown-menu{
+        transform: translate3d(-15px, 24px, 0px);
+    }
+
+    /* footer */
+    footer{
+        bottom: -86px;
+    }
+
+
+    /* search tables */
+    .search-input-custom{
+        width: 250px;
+    }
+
+}

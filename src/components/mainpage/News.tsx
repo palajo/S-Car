@@ -17,12 +17,16 @@ type NewProps = {
 }
 
 export const New = ({ newImage, newDescription }: NewProps) =>
-    <Col>
+    <Col lg={3} md={6} xs={12} className="padding-15-mobile">
         <Row>
-            <img alt="" src={newImage} width="100%" />
-        </Row>
-        <Row>
-            <p className="NewsHeading">{newDescription}</p>
+            <Col>
+                <Row>
+                    <img alt="" src={newImage} className="newsImage" />
+                </Row>
+                <Row>
+                    <p className="NewsHeading">{newDescription}</p>
+                </Row>
+            </Col>
         </Row>
     </Col>
 

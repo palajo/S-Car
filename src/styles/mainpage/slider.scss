@@ -1,14 +1,11 @@
 /* Slider styles */
 .Slider{
 	border-bottom: 1px solid #962932;
-}
-.SliderBackground{
 	background: url(../../static/images/slider-image.png);
 	background-size: contain;
-	background-position: right;
+	background-position: 80%;
 	background-repeat: no-repeat;
 	padding: 120px 0px;
-
 }
 .SliderHeading{
 	font-size: 36px;
@@ -26,5 +23,6 @@ p.SliderText{
 	line-height: 24px;
 
 	margin-bottom: 20px;
+	width: 100%;
 }
 /* ------------------------ */
