@@ -22,7 +22,8 @@
 
 	/* Header styles */
 	.logo{
-		height: 36px;
+		height: 30px;
+		margin: 3px 0px;
 	}
 	.icon{
 		height: 36px;
@@ -134,9 +135,10 @@
 
 	.search-form-slide{
 		position: absolute;
-		right: -400px;
-		top: 51px;
+		left: -400px;
+		top: 103px;
 
+		width: 250px;
 		transition: 0.5s;
 
 		animation: ease-in-out fade-out 0.3s;

@@ -17,7 +17,7 @@ export const Office = ({ officeImage }: OfficeProps) =>
     <Col xs={12} md={4} xl={true}>
         <Row>
             <Col>
-                <img src={officeImage} width="100%" alt="something" />
+                <img src={officeImage} width="100%" height="185px" alt="something" />
             </Col>
         </Row>
     </Col>

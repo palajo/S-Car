@@ -23,19 +23,24 @@ import logo from '../static/images/logo.svg';
 import mainmenu from '../static/images/main-menu.svg';
 import profile from '../static/images/profile.svg';
 import cart from '../static/images/cart.svg';
+import search from '../static/images/search.svg';
 
 
 function openNav() {
 	(document.getElementById("sidenav") as HTMLInputElement).style.left = "0px";
 	(document.getElementById("overlay") as HTMLInputElement).style.display = "block";
 }
-
+function openSearch() {
+	var search = (document.getElementById("searchmobile") as HTMLInputElement);
+	search.style.left = (search.style.left === '-400px') ? '20px' : '-400px';
+}
 
 function Header() {
 	return(
         <header>
 			<Overlay />
             <Sidebar />
+			<SearchMobile />
             <Container fluid className="TopNavigation">
                 <Container>
                     <Row className="justify-content-between">
@@ -94,8 +99,13 @@ function Header() {
                                 <div className="align-self-center margin-right-30 d-none d-lg-block">
 									<Search />
 								</div>
-								<div className="d-flex margin-left-20 margin-right-20 d-lg-none">
-									<SearchMobile />
+								<div className="d-flex margin-right-10 d-lg-none">
+									<img
+										alt=""
+										src={search}
+										className="icon"
+										onClick={openSearch}
+									/>
 								</div>
 
 
