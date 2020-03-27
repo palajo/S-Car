@@ -26,6 +26,7 @@
 	}
 	.icon{
 		height: 48px;
+		cursor: pointer;
 	}
 
     /* Reassign margins */
@@ -126,5 +127,18 @@
     .search-input-custom{
         width: 250px;
     }
+	.search-form-slide{
+		position: absolute;
+		right: -400px;
+		top: 63px;
+
+		transition: 0.5s;
+
+		animation: ease-in-out fade-out 0.3s;
+
+		.icon{
+			height: 50px;
+		}
+	}
 
 }

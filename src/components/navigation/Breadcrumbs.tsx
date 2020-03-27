@@ -4,7 +4,7 @@ import { Container, Row } from 'react-bootstrap';
 import withBreadcrumbs from "react-router-breadcrumbs-hoc";
 
 // importing Breadcrumbs component styles
-import '../../styles/breadcrumbs.scss';
+import '../../styles/navigation/breadcrumbs.scss';
 
 
 const Breadcrumbs = withBreadcrumbs()(({ breadcrumbs }) => (

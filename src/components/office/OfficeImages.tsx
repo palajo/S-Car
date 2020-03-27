@@ -1,6 +1,8 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 
+// importing css
+import '../../styles/office/office.scss';
 
 // importing News images
 import placeholder from '../../static/images/office/office-placeholder.jpg';

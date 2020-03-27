@@ -35,11 +35,31 @@ function Benefits() {
 				<h2>Why we?!</h2>
 			</Row>
 			<Row className="IconGraphic">
-				<Benefit benefitPosition="justify-content-center justify-content-lg-start" benefitIcon={iconDiscount} benefitDescription="" />
-				<Benefit benefitPosition="justify-content-center justify-content-lg-start" benefitIcon={iconDiscount} benefitDescription="" />
-				<Benefit benefitPosition="justify-content-center text-center" benefitIcon={iconCalendar} benefitDescription="Any delivery just in time!" />
-				<Benefit benefitPosition="justify-content-center justify-content-lg-end" benefitIcon={iconDiscount} benefitDescription="" />
-				<Benefit benefitPosition="justify-content-center justify-content-lg-end" benefitIcon={iconDiscount} benefitDescription="" />
+				<Benefit
+					benefitPosition="justify-content-center justify-content-lg-start"
+					benefitIcon={iconDiscount}
+					benefitDescription=""
+				/>
+				<Benefit
+					benefitPosition="justify-content-center justify-content-lg-start"
+					benefitIcon={iconDiscount}
+					benefitDescription=""
+				/>
+				<Benefit
+					benefitPosition="justify-content-center text-center"
+					benefitIcon={iconCalendar}
+					benefitDescription="Any delivery just in time!"
+				/>
+				<Benefit
+					benefitPosition="justify-content-center justify-content-lg-end"
+					benefitIcon={iconDiscount}
+					benefitDescription=""
+				 />
+				 <Benefit
+ 					benefitPosition="justify-content-center justify-content-lg-end"
+ 					benefitIcon={iconDiscount}
+ 					benefitDescription=""
+ 				 />
 			</Row>
 		</Container>
     );

@@ -30,37 +30,109 @@ function Manufacturers() {
 	return(
         <Container className="margin-bottom-50 d-none d-lg-block">
             <Row>
-				<Manufacturer manufacturerLogo={volkswagen} manufacturerTitle="Volkswagen" />
-				<Manufacturer manufacturerLogo={volkswagen} manufacturerTitle="Volkswagen" />
-				<Manufacturer manufacturerLogo={volkswagen} manufacturerTitle="Volkswagen" />
-                <Manufacturer manufacturerLogo={volkswagen} manufacturerTitle="Volkswagen" />
-				<Manufacturer manufacturerLogo={volkswagen} manufacturerTitle="Volkswagen" />
-				<Manufacturer manufacturerLogo={volkswagen} manufacturerTitle="Volkswagen" />
+				<Manufacturer
+					manufacturerLogo={volkswagen}
+					manufacturerTitle="Volkswagen"
+				/>
+				<Manufacturer
+					manufacturerLogo={volkswagen}
+					manufacturerTitle="Volkswagen"
+				/>
+				<Manufacturer
+					manufacturerLogo={volkswagen}
+					manufacturerTitle="Volkswagen"
+				/>
+				<Manufacturer
+					manufacturerLogo={volkswagen}
+					manufacturerTitle="Volkswagen"
+				/>
+				<Manufacturer
+					manufacturerLogo={volkswagen}
+					manufacturerTitle="Volkswagen"
+				/>
+				<Manufacturer
+					manufacturerLogo={volkswagen}
+					manufacturerTitle="Volkswagen"
+				/>
             </Row>
             <Row id="reverse">
-                <Manufacturer manufacturerLogo={volkswagen} manufacturerTitle="Volkswagen" />
-                <Manufacturer manufacturerLogo={volkswagen} manufacturerTitle="Volkswagen" />
-                <Manufacturer manufacturerLogo={volkswagen} manufacturerTitle="Volkswagen" />
-                <Manufacturer manufacturerLogo={volkswagen} manufacturerTitle="Volkswagen" />
-                <Manufacturer manufacturerLogo={volkswagen} manufacturerTitle="Volkswagen" />
-                <Manufacturer manufacturerLogo={volkswagen} manufacturerTitle="Volkswagen" />
-            </Row>
+				<Manufacturer
+					manufacturerLogo={volkswagen}
+					manufacturerTitle="Volkswagen"
+				/>
+				<Manufacturer
+					manufacturerLogo={volkswagen}
+					manufacturerTitle="Volkswagen"
+				/>
+				<Manufacturer
+					manufacturerLogo={volkswagen}
+					manufacturerTitle="Volkswagen"
+				/>
+				<Manufacturer
+					manufacturerLogo={volkswagen}
+					manufacturerTitle="Volkswagen"
+				/>
+				<Manufacturer
+					manufacturerLogo={volkswagen}
+					manufacturerTitle="Volkswagen"
+				/>
+				<Manufacturer
+					manufacturerLogo={volkswagen}
+					manufacturerTitle="Volkswagen"
+				/>
+			</Row>
             <Row>
-				<Manufacturer manufacturerLogo={volkswagen} manufacturerTitle="Volkswagen" />
-				<Manufacturer manufacturerLogo={volkswagen} manufacturerTitle="Volkswagen" />
-				<Manufacturer manufacturerLogo={volkswagen} manufacturerTitle="Volkswagen" />
-                <Manufacturer manufacturerLogo={volkswagen} manufacturerTitle="Volkswagen" />
-				<Manufacturer manufacturerLogo={volkswagen} manufacturerTitle="Volkswagen" />
-				<Manufacturer manufacturerLogo={volkswagen} manufacturerTitle="Volkswagen" />
+				<Manufacturer
+					manufacturerLogo={volkswagen}
+					manufacturerTitle="Volkswagen"
+				/>
+				<Manufacturer
+					manufacturerLogo={volkswagen}
+					manufacturerTitle="Volkswagen"
+				/>
+				<Manufacturer
+					manufacturerLogo={volkswagen}
+					manufacturerTitle="Volkswagen"
+				/>
+				<Manufacturer
+					manufacturerLogo={volkswagen}
+					manufacturerTitle="Volkswagen"
+				/>
+				<Manufacturer
+					manufacturerLogo={volkswagen}
+					manufacturerTitle="Volkswagen"
+				/>
+				<Manufacturer
+					manufacturerLogo={volkswagen}
+					manufacturerTitle="Volkswagen"
+				/>
             </Row>
             <Row id="reverse">
-                <Manufacturer manufacturerLogo={volkswagen} manufacturerTitle="Volkswagen" />
-                <Manufacturer manufacturerLogo={volkswagen} manufacturerTitle="Volkswagen" />
-                <Manufacturer manufacturerLogo={volkswagen} manufacturerTitle="Volkswagen" />
-                <Manufacturer manufacturerLogo={volkswagen} manufacturerTitle="Volkswagen" />
-                <Manufacturer manufacturerLogo={volkswagen} manufacturerTitle="Volkswagen" />
-                <Manufacturer manufacturerLogo={volkswagen} manufacturerTitle="Volkswagen" />
-            </Row>
+				<Manufacturer
+					manufacturerLogo={volkswagen}
+					manufacturerTitle="Volkswagen"
+				/>
+				<Manufacturer
+					manufacturerLogo={volkswagen}
+					manufacturerTitle="Volkswagen"
+				/>
+				<Manufacturer
+					manufacturerLogo={volkswagen}
+					manufacturerTitle="Volkswagen"
+				/>
+				<Manufacturer
+					manufacturerLogo={volkswagen}
+					manufacturerTitle="Volkswagen"
+				/>
+				<Manufacturer
+					manufacturerLogo={volkswagen}
+					manufacturerTitle="Volkswagen"
+				/>
+				<Manufacturer
+					manufacturerLogo={volkswagen}
+					manufacturerTitle="Volkswagen"
+				/>
+			</Row>
         </Container>
     );
 }

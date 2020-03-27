@@ -8,6 +8,9 @@ import OfficeImages from '../../components/office/OfficeImages';
 import Breadcrumbs from '../../components/navigation/Breadcrumbs';
 
 
+import '../../styles/office/office.scss';
+
+
 function Office() {
 	return(
 		<body>

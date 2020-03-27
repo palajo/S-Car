@@ -1,0 +1,19 @@
+.MainNavigation{
+	.form-control{
+		height: 35px;
+		font-size: 12px;
+
+		border: 1px solid #e2e2e2;
+		border-radius: 0px;
+
+		width: 320px;
+		z-index: 0;
+	}
+	.search-input-button{
+		position: absolute;
+		right: -15px;
+		top: -7.5px;
+
+		z-index: 4;
+	}
+}

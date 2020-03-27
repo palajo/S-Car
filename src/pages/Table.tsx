@@ -3,7 +3,7 @@ import { Container, Row, Col, Tabs, Tab, Form, InputGroup } from 'react-bootstra
 
 
 // importing Table components styles
-import '../styles/table.scss';
+import '../styles/catalog/table.scss';
 
 
 // importing Table components

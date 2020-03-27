@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom';
 
 
 // importing Mainpage components
-import '../styles/category.scss';
+import '../styles/catalog/category.scss';
 
 
 // importing Mainpage components
@@ -68,18 +68,66 @@ function Catalog() {
 			<Breadcrumbs />
                 <Container className="categoryBlocks">
 					<Row>
-						<Category categoryLink="/table" categoryIcon={categoryImage} categoryTitle="Accessories" />
-						<Category categoryLink="/table" categoryIcon={categoryImage} categoryTitle="Engine" />
-						<Category categoryLink="/table" categoryIcon={categoryImage} categoryTitle="Accessories" />
-						<Category categoryLink="/table" categoryIcon={categoryImage} categoryTitle="Accessories" />
-						<Category categoryLink="/table" categoryIcon={categoryImage} categoryTitle="Accessories" />
-						<Category categoryLink="/table" categoryIcon={categoryImage} categoryTitle="Accessories" />
-						<Category categoryLink="/table" categoryIcon={categoryImage} categoryTitle="Accessories" />
-						<Category categoryLink="/table" categoryIcon={categoryImage} categoryTitle="Accessories" />
-						<Category categoryLink="/table" categoryIcon={categoryImage} categoryTitle="Accessories" />
-						<Category categoryLink="/table" categoryIcon={categoryImage} categoryTitle="Accessories" />
-						<Category categoryLink="/table" categoryIcon={categoryImage} categoryTitle="Accessories" />
-						<CategoryBack categoryLink="#" categoryIcon={categoryBack} categoryTitle="Get back!" />
+						<Category
+							categoryLink="/table"
+							categoryIcon={categoryImage}
+							categoryTitle="Accessories"
+						/>
+						<Category
+							categoryLink="/table"
+							categoryIcon={categoryImage}
+							categoryTitle="Engine"
+					 	/>
+						<Category
+							categoryLink="/table"
+							categoryIcon={categoryImage}
+							categoryTitle="Accessories"
+						/>
+						<Category
+							categoryLink="/table"
+							categoryIcon={categoryImage}
+							categoryTitle="Accessories"
+					 	/>
+						<Category
+							categoryLink="/table"
+							categoryIcon={categoryImage}
+							categoryTitle="Accessories"
+					 	/>
+						<Category
+							categoryLink="/table"
+							categoryIcon={categoryImage}
+							categoryTitle="Accessories"
+						 	/>
+						<Category
+							categoryLink="/table"
+							categoryIcon={categoryImage}
+							categoryTitle="Accessories"
+					 	/>
+						<Category
+							categoryLink="/table"
+							categoryIcon={categoryImage}
+							categoryTitle="Accessories"
+					 	/>
+						<Category
+							categoryLink="/table"
+							categoryIcon={categoryImage}
+							categoryTitle="Accessories"
+					 	/>
+						<Category
+							categoryLink="/table"
+							categoryIcon={categoryImage}
+							categoryTitle="Accessories"
+					 	/>
+						<Category
+							categoryLink="/table"
+							categoryIcon={categoryImage}
+							categoryTitle="Accessories"
+					 	/>
+						<CategoryBack
+							categoryLink="#"
+							categoryIcon={categoryBack}
+							categoryTitle="Get back!"
+						/>
 					</Row>
 				</Container>
 			<Footer />

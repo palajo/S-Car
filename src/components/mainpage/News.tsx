@@ -38,10 +38,22 @@ function News() {
 				<h2>Latest news</h2>
 			</Row>
 			<Row className="NewsBlock">
-				<New newImage={newsimage} newDescription="Some news over here." />
-				<New newImage={newsimage} newDescription="Some news over here." />
-				<New newImage={newsimage} newDescription="Some news over here." />
-				<New newImage={newsimage} newDescription="Some news over here." />
+				<New
+					newImage={newsimage}
+					newDescription="Some news over here."
+				/>
+				<New
+					newImage={newsimage}
+					newDescription="Some news over here."
+				/>
+				<New
+					newImage={newsimage}
+					newDescription="Some news over here."
+				/>
+				<New
+					newImage={newsimage}
+					newDescription="Some news over here."
+				/>
 			</Row>
 		</Container>
     );
