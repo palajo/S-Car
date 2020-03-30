@@ -6,6 +6,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 import iconClock from '../../static/images/icon-clock.svg';
 import iconLocation from '../../static/images/icon-location.svg';
 import iconMessage from '../../static/images/icon-message.svg';
+import iconSkype from '../../static/images/icon-skype.svg';
 
 
 // setting Contact parameters
@@ -69,7 +70,7 @@ function PageContacts() {
 										contactText="Mn. - Fr.: 9:00 - 18:00"
 									/>
                                     <Contact
-										contactIcon={iconMessage}
+										contactIcon={iconSkype}
 										contactTitle="Skype:"
 										contactText="@scarmanager"
 									/>
@@ -117,7 +118,7 @@ function PageContacts() {
 										contactText="Mn. - Fr.: 9:00 - 18:00"
 								 	/>
                                     <Contact
-										contactIcon={iconMessage}
+										contactIcon={iconSkype}
 										contactTitle="Skype:"
 										contactText="@scarmanager"
 								 	/>
@@ -167,7 +168,7 @@ function PageContacts() {
 										contactText="Mn. - Fr.: 9:00 - 18:00"
 									/>
 									<Contact
-										contactIcon={iconMessage}
+										contactIcon={iconSkype}
 										contactTitle="Skype:"
 										contactText="@scarmanager"
 									/>
@@ -187,7 +188,7 @@ function PageContacts() {
                             </Row>
                             <Row className="ContactInfo">
 								<Col xs={12} md={6} lg={true}>
-									<Contact 
+									<Contact
 										contactIcon={iconMessage}
 										contactTitle="Ask a question:"
 										contactText="info@s-car.com"
@@ -215,7 +216,7 @@ function PageContacts() {
 										contactText="Mn. - Fr.: 9:00 - 18:00"
 									/>
 									<Contact
-										contactIcon={iconMessage}
+										contactIcon={iconSkype}
 										contactTitle="Skype:"
 										contactText="@scarmanager"
 									/>

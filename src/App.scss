@@ -143,8 +143,6 @@ a{
 		background-position: left bottom;
 	}
 }
-
-/* ------------------------ */
 .z-index-1{
 	z-index: 1;
 }
@@ -159,4 +157,7 @@ a{
 }
 .max-width-300{
 	max-width: 300px;
+}
+img{
+	object-fit: contain;
 }

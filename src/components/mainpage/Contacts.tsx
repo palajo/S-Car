@@ -10,6 +10,7 @@ import '../../styles/mainpage/contacts.scss';
 import iconClock from '../../static/images/icon-clock.svg';
 import iconLocation from '../../static/images/icon-location.svg';
 import iconMessage from '../../static/images/icon-message.svg';
+import iconSkype from '../../static/images/icon-skype.svg';
 
 
 // importing Map image (instead of iframe for now) !!!
@@ -76,7 +77,7 @@ function Contacts() {
 								contactText="Mn. - Fr.: 9:00 - 18:00"
 							/>
 							<Contact
-								contactIcon={iconMessage}
+								contactIcon={iconSkype}
 								contactTitle="Skype:"
 								contactText="@scarmanager"
 							 />
@@ -84,7 +85,7 @@ function Contacts() {
 					</Row>
 				</Col>
 				<Col xs={12} lg={true}>
-					<img 
+					<img
 						alt=""
 						src={Map}
 						width="100%"
