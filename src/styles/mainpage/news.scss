@@ -3,16 +3,23 @@
 	img{
 		margin-bottom: 15px;
 	}
-	p{
+	h3{
 		font-size: 20px;
 		line-height: 24px;
 
 		font-weight: 600;
+		margin-bottom: 5px;
+	}
+	p{
+		font-size: 14px;
+		line-height: 18px;
+
+		color: #666;
 	}
 	.col-lg-3{
 		.row{
 			.col{
-				margin: 0px 10px;
+				margin: 0px 15px;
 			}
 		}
 	}

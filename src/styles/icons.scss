@@ -1,0 +1,54 @@
+/* big icons */
+.newicon{
+	width: 60px;
+	height: 50px;
+	background-size: cover;
+
+	cursor: pointer;
+}
+.mainmenu{
+	background-image: url(../static/images/icons/icon-menu.svg);
+}
+.mainmenu-white{
+	background-image: url(../static/images/icons/icon-menu-white.svg);
+}
+.mainmenu-blue{
+	background-image: url(../static/images/icons/icon-menu-blue.svg);
+}
+.search{
+	background-image: url(../static/images/icons/icon-search.svg);
+}
+.profile{
+	background-image: url(../static/images/icons/icon-profile.svg);
+}
+.cart{
+	background-image: url(../static/images/icons/icon-cart.svg);
+}
+.newicon:hover{
+	filter: brightness(125%);
+	transition: 0.1s ease;
+}
+
+
+/* contacts icons */
+.contacticon{
+	width: 64px;
+	height: 56px;
+	background-size: cover;
+}
+.contacticon:hover{
+	filter: invert(0.05);
+	transition: 0.1s ease;
+}
+#iconMessage{
+	background-image: url(../static/images/icons/icon-message.svg);
+}
+#iconLocation{
+	background-image: url(../static/images/icons/icon-location.svg);
+}
+#iconSkype{
+	background-image: url(../static/images/icons/icon-skype.svg);
+}
+#iconClock{
+	background-image: url(../static/images/icons/icon-clock.svg);
+}

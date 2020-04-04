@@ -2,6 +2,8 @@ import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 
 
+import '../../styles/mainpage/benefits.scss';
+
 // importing Benefit icons
 import iconDiscount from '../../static/images/benefits/icon-discount.svg';
 import iconCalendar from '../../static/images/benefits/icon-calendar.svg';

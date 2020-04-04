@@ -6,20 +6,13 @@ import { Container, Row, Col } from 'react-bootstrap';
 import '../../styles/mainpage/contacts.scss';
 
 
-// importing Contact icons
-import iconClock from '../../static/images/icon-clock.svg';
-import iconLocation from '../../static/images/icon-location.svg';
-import iconMessage from '../../static/images/icon-message.svg';
-import iconSkype from '../../static/images/icon-skype.svg';
-
-
 // importing Map image (instead of iframe for now) !!!
 import Map from '../../static/images/google-map.png';
 
 
 // setting Contact parameters
 type ContactProps = {
-    contactIcon: string,
+	contactIcon: string,
     contactTitle: string,
     contactText: string
 }
@@ -27,7 +20,7 @@ type ContactProps = {
 export const Contact = ({ contactIcon, contactTitle, contactText }: ContactProps) =>
     <Row>
         <div className="span">
-            <img alt="" width="64px" src={contactIcon} />
+            <div className="contacticon" id={contactIcon}></div>
         </div>
         <div className="span margin-left-15 align-self-center">
             <p className="gray-12px">{contactTitle}</p>
@@ -50,34 +43,34 @@ function Contacts() {
 					<Row className="ContactInfo">
 						<Col xs={12} md={6} lg={true}>
 							<Contact
-								contactIcon={iconMessage}
+								contactIcon="iconMessage"
 								contactTitle="Ask a question:"
 								contactText="info@s-car.com"
 							/>
 							<Contact
-								contactIcon={iconMessage}
+								contactIcon="iconMessage"
 								contactTitle="For partners:"
 								contactText="partners@s-car.com"
 							 />
 							<Contact
-							 	contactIcon={iconLocation}
+								contactIcon="iconLocation"
 								contactTitle="Address:"
 								contactText="28 Park Road London"
 							 />
 						</Col>
 						<Col xs={12} md={6} lg={true}>
 							<Contact
-								contactIcon={iconClock}
+								contactIcon="iconClock"
 								contactTitle="Warehouse:"
 								contactText="Mn. - Fr.: 9:00 - 18:00"
 							 />
 							<Contact
-								contactIcon={iconClock}
+								contactIcon="iconClock"
 								contactTitle="Working hours:"
 								contactText="Mn. - Fr.: 9:00 - 18:00"
 							/>
 							<Contact
-								contactIcon={iconSkype}
+								contactIcon="iconSkype"
 								contactTitle="Skype:"
 								contactText="@scarmanager"
 							 />

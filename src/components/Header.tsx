@@ -20,11 +20,6 @@ import LanguageSwitcher from './language/language-switcher';
 
 // importing Header images
 import logo from '../static/images/logo.svg';
-import mainmenu from '../static/images/main-menu.svg';
-import profile from '../static/images/profile.svg';
-import cart from '../static/images/cart.svg';
-import search from '../static/images/search.svg';
-
 
 function openNav() {
 	(document.getElementById("sidenav") as HTMLInputElement).style.left = "0px";
@@ -51,10 +46,10 @@ function Header() {
                         </Col>
                         <Col>
                             <Row className="justify-content-center justify-content-lg-end">
-                                <div className="margin-right-40 font-medium d-none d-md-block d-lg-block">
+                                <div className="font-medium d-none d-md-block d-lg-block TopNavigation-Hover">
                                     <p>+38 (000) 000 00 00</p>
                                 </div>
-                                <div>
+                                <div className="TopNavigation-Hover">
                                     <p>1 USD = 24,95 UAH ; 1 EUR = 1,10 USD</p>
                                 </div>
                             </Row>
@@ -67,18 +62,10 @@ function Header() {
                     <Row className="justify-content-between">
                         <Col className="max-width-300">
                             <Row className="justify-content-start">
-
-
-                                <div className="margin-right-20">
-                                    <img
-										alt=""
-										src={mainmenu}
-										className="menuToggle icon margin-right-mobile-10"
-										onClick={openNav}
-									/>
+                                <div className="margin-right-20 margin-right-mobile-10">
+									<div className="newicon mainmenu" onClick={openNav}>
+									</div>
                                 </div>
-
-
                                 <div>
                                     <Link to="/">
 										<img
@@ -88,63 +75,47 @@ function Header() {
 										/>
 									</Link>
                                 </div>
-
-
                             </Row>
                         </Col>
-                        <Col>
-                            <Row className="justify-content-end">
-
-
-                                <div className="align-self-center margin-right-30 d-none d-lg-block">
+						<Col className="align-self-center">
+							<Row className="justify-content-center">
+								<div className="d-none d-lg-block">
 									<Search />
 								</div>
+							</Row>
+						</Col>
+                        <Col>
+                            <Row className="justify-content-end">
 								<div className="d-flex margin-right-10 d-lg-none">
-									<img
-										alt=""
-										src={search}
-										className="icon"
-										onClick={openSearch}
-									/>
+									<div className="newicon search" onClick={openSearch}>
+									</div>
 								</div>
 
-
-								<div className="d-flex margin-left-20 margin-right-20 hover-icon-text">
-                                    <div className="span margin-right-10">
-                                        <NavLink to="/profile">
-											<img
-												alt=""
-												src={profile}
-												className="icon"
-											/>
-										</NavLink>
-                                    </div>
-                                    <div className="span align-self-center d-none d-lg-block">
-										<NavLink to="/profile">
+								<NavLink to="/profile">
+									<div className="d-flex margin-left-20 margin-right-20 hover-icon-text">
+	                                    <div className="span padding-right-10">
+											<div className="newicon profile">
+											</div>
+	                                    </div>
+	                                    <div className="span align-self-center d-none d-lg-block">
 											<b className="bold-16px">Personal</b>
 											<br />profile
-										</NavLink>
-                                    </div>
-                                </div>
+	                                    </div>
+	                                </div>
+								</NavLink>
 
-
-                                <div className="d-flex margin-left-20 margin-right-20 hover-icon-text">
-                                    <div className="span margin-right-10">
-                                        <NavLink to="/cart">
-											<img
-												alt=""
-												src={cart}
-												className="icon"
-											 />
-										</NavLink>
-                                    </div>
-                                    <div className="span align-self-center d-none d-lg-block">
-										<NavLink to="/cart">
+								<NavLink to="/cart">
+	                                <div className="d-flex margin-left-20 margin-right-20 hover-icon-text">
+	                                    <div className="span padding-right-10">
+											<div className="newicon cart">
+											</div>
+	                                    </div>
+	                                    <div className="span align-self-center d-none d-lg-block">
 	                                        <b className="bold-16px">Shopping</b>
 											<br />cart
-										</NavLink>
-                                    </div>
-                                </div>
+	                                    </div>
+	                                </div>
+								</NavLink>
 
 
                                 <div className="align-self-center margin-left-20 d-none d-xl-block">

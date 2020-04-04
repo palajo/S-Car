@@ -23,9 +23,13 @@ export const New = ({ newImage, newDescription }: NewProps) =>
                 <Row>
                     <img alt="" src={newImage} width="100%" className="newsImage" />
                 </Row>
-                <Row>
-                    <p className="NewsHeading">{newDescription}</p>
-                </Row>
+                <Row className="NewsDescription">
+                    <h3 className="NewsHeading">{newDescription}</h3>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur elit,
+						sed do eiusmod tempor incididunt ut labore.
+					</p>
+				</Row>
             </Col>
         </Row>
     </Col>
