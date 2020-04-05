@@ -49,7 +49,7 @@ function Header() {
                                 <div className="font-medium d-none d-md-block d-lg-block TopNavigation-Hover">
                                     <p>+38 (000) 000 00 00</p>
                                 </div>
-                                <div className="TopNavigation-Hover">
+                                <div className="TopNavigation-Hover d-md-block d-lg-none d-xl-block">
                                     <p>1 USD = 24,95 UAH ; 1 EUR = 1,10 USD</p>
                                 </div>
                             </Row>
@@ -66,7 +66,7 @@ function Header() {
 									<div className="newicon mainmenu" onClick={openNav}>
 									</div>
                                 </div>
-                                <div>
+                                <div className="align-self-center">
                                     <Link to="/">
 										<img
 											alt=""
@@ -77,10 +77,17 @@ function Header() {
                                 </div>
                             </Row>
                         </Col>
-						<Col className="align-self-center">
+						<Col className="align-self-center d-none d-lg-block">
 							<Row className="justify-content-center">
-								<div className="d-none d-lg-block">
+								<div>
 									<Search />
+									<div className="search-history" id="history">
+										<li>Audi breaks</li>
+										<li>Volkswagen wheel</li>
+										<li>BMW vipers</li>
+										<li>Niva mirror</li>
+										<li>JDM seats</li>
+									</div>
 								</div>
 							</Row>
 						</Col>

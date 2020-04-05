@@ -1,6 +1,10 @@
 /* Slider styles */
 .Slider{
 	border-bottom: 1px solid #962932;
+	.container{
+		padding-left: 30px;
+		padding-right: 30px;
+	}
 }
 .SliderBackground{
 	background: url(../../static/images/slider-image.png);

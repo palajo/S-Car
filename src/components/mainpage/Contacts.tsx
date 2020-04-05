@@ -1,14 +1,12 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 
-
 // importing Contact components styles
 import '../../styles/mainpage/contacts.scss';
 
 
 // importing Map image (instead of iframe for now) !!!
-import Map from '../../static/images/google-map.png';
-
+import MainpageMap from './MainpageMap';
 
 // setting Contact parameters
 type ContactProps = {
@@ -27,7 +25,6 @@ export const Contact = ({ contactIcon, contactTitle, contactText }: ContactProps
             <p>{contactText}</p>
         </div>
     </Row>
-
 
 function Contacts() {
 	return(
@@ -78,12 +75,7 @@ function Contacts() {
 					</Row>
 				</Col>
 				<Col xs={12} lg={true}>
-					<img
-						alt=""
-						src={Map}
-						width="100%"
-						className="margin-top-20-mobile"
-					/>
+					<MainpageMap />
 				</Col>
 			</Row>
 		</Container>
