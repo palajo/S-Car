@@ -1,4 +1,4 @@
-import React, { useState, Fragment } from 'react';
+import React, { useState } from 'react';
 import { Container, Col ,Row } from 'react-bootstrap';
 import GoogleMapReact from 'google-map-react';
 
@@ -146,11 +146,11 @@ const Map = (props: any) => {
         <Container>
             <Row className="justify-content-end margin-bottom-20 margin-right-10">
                 <Row>
-                    <div className="warehouse small"></div>
+                    <div className="bluemarker small"></div>
                     <p className="margin-left-10 align-self-center">Склады</p>
                 </Row>
                 <Row className="margin-left-50">
-                    <div className="representation small"></div>
+                    <div className="redmarker small"></div>
                     <p className="margin-left-10 align-self-center">Представительства</p>
                 </Row>
             </Row>
