@@ -82,6 +82,10 @@
 		hr{
 			background: white;
 		}
+		.SliderBackground{
+			padding: 0px 50px;
+			background: none;
+		}
 	}
 
     /* Benefits styles */
@@ -91,8 +95,8 @@
 
     /* News styles */
 	.NewsBlock{
-		.col-xl{
-			margin: 0;
+		.col-12{
+			margin-bottom: 50px;
 		}
 	}
 
@@ -146,9 +150,13 @@
 
 		animation: ease-in-out fade-out 0.3s;
 
-		.icon{
+		.newicon{
 			height: 50px;
+			width: 60px;
 		}
 	}
-
+	.mainpage-map{
+		margin-top: 30px;
+		height: 300px;
+	}
 }

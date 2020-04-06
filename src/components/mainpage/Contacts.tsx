@@ -74,7 +74,7 @@ function Contacts() {
 						</Col>
 					</Row>
 				</Col>
-				<Col xs={12} lg={true}>
+				<Col className="mainpage-map" xs={12} lg={true}>
 					<MainpageMap />
 				</Col>
 			</Row>

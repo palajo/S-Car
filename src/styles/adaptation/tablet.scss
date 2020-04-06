@@ -6,8 +6,8 @@
 
     /* Bootstrap styles */
     .container{
-        padding-left: 50px;
-        padding-right: 50px;
+        padding-left: 40px;
+        padding-right: 40px;
     }
 
     /* Button styles */
@@ -39,7 +39,7 @@
         }
     }
 	.margin-right-mobile-10{
-		margin-right: 10px;
+		margin-right: 10px !important;
 	}
     .margin-top-20-mobile{
         margin-top: 20px;
@@ -76,6 +76,15 @@
 		hr{
 			background: white;
 		}
+		.SliderBackground{
+			padding: 0px 70px;
+			background: none;
+
+			.container{
+				padding-left: 70px;
+				padding-right: 70px;
+			}
+		}
 	}
 
     /* Benefits styles */
@@ -85,8 +94,8 @@
 
     /* News styles */
 	.NewsBlock{
-		.col-xl{
-			margin: 0px;
+		.col-md-6{
+			margin-bottom: 50px;
 		}
 	}
 
@@ -140,5 +149,8 @@
 			height: 50px;
 		}
 	}
-
+	.mainpage-map{
+		margin-top: 30px;
+		height: 300px;
+	}
 }

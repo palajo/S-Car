@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 
- 
+
 // importing News components styles
 import '../../styles/mainpage/news.scss';
 
@@ -18,20 +18,12 @@ type NewProps = {
 
 export const New = ({ newImage, newDescription }: NewProps) =>
     <Col lg={3} md={6} xs={12} className="padding-15-mobile">
-        <Row>
-            <Col>
-                <Row>
-                    <img alt="" src={newImage} width="100%" className="newsImage" />
-                </Row>
-                <Row className="NewsDescription">
-                    <h3 className="NewsHeading">{newDescription}</h3>
-					<p>
-						Lorem ipsum dolor sit amet, consectetur elit,
-						sed do eiusmod tempor incididunt ut labore.
-					</p>
-				</Row>
-            </Col>
-        </Row>
+        <img alt="" src={newImage} />
+        <h3 className="NewsHeading">{newDescription}</h3>
+		<p>
+			Lorem ipsum dolor sit amet, consectetur elit,
+			sed do eiusmod tempor incididunt ut labore.
+		</p>
     </Col>
 
 

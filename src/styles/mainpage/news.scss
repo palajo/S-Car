@@ -2,6 +2,7 @@
 .NewsBlock {
 	img{
 		margin-bottom: 15px;
+		width: 100%;
 	}
 	h3{
 		font-size: 20px;
@@ -15,12 +16,5 @@
 		line-height: 18px;
 
 		color: #666;
-	}
-	.col-lg-3{
-		.row{
-			.col{
-				margin: 0px 15px;
-			}
-		}
 	}
 }
