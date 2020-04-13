@@ -101,7 +101,7 @@ export const InfoBlock = ({data}: InfoProps) => {
 };
 
 const Map = (props: any) => {
-    const [center] = useState({lat: 49, lng: 31});
+    const [center] = useState({lat: 48.5, lng: 32});
     const [state, setState] = useState({
         data: {
             show: "markerinfo active",
@@ -109,7 +109,7 @@ const Map = (props: any) => {
             phone: "+38 (063) 03 16 565",
             questionMail: "info@s-car.com",
             partnersMail: "partner@s-car.com",
-            officeAdress: "28 Park Road London WC36 7MB",
+            officeAdress: "28 Park Road London",
             warehouseWorkingTime: "Mn. - Fr.: 9:00 - 18:00",
             officeWorkingTime: "Mn. - Fr.: 9:00 - 18:00",
             managerSkype: "@scarmanager",
@@ -127,8 +127,17 @@ const Map = (props: any) => {
     return (
         <Container>
             <Row>
-                <Col lg={6} md={12} xs={12}>
-                    <Row className="margin-bottom-10">
+				<Col lg={6} md={12} xs={12}>
+					{
+						state.isPressedMarker ? (
+							<InfoBlock
+								data={state.data}
+							/>
+						) : null
+					}
+				</Col>
+                <Col lg={6} md={12} xs={12} className="margin-top-50-mobile">
+                    <Row className="margin-bottom-15">
                         <div className="d-flex">
                             <div className="marker small" id="blue"></div>
                             <p className="margin-left-10 align-self-center">Склады</p>
@@ -152,10 +161,10 @@ const Map = (props: any) => {
                                     toggleMarker({
                                         show: "markerinfo active",
                                         city: "DNIPRO",
-                                        phone: "+38 (063) 03 16 565",
+                                        phone: "+38 (063) 03 16 125",
                                         questionMail: "info@s-car.com",
                                         partnersMail: "partner@s-car.com",
-                                        officeAdress: "28 Park Road London WC36 7MB",
+                                        officeAdress: "28 Park Road London",
                                         warehouseWorkingTime: "Mn. - Fr.: 9:00 - 18:00",
                                         officeWorkingTime: "Mn. - Fr.: 9:00 - 18:00",
                                         managerSkype: "@scarmanager",
@@ -173,7 +182,7 @@ const Map = (props: any) => {
 										phone: "+38 (063) 03 16 565",
 										questionMail: "info@s-car.com",
 										partnersMail: "partner@s-car.com",
-										officeAdress: "28 Park Road London WC36 7MB",
+										officeAdress: "28 Park Road London",
 										warehouseWorkingTime: "Mn. - Fr.: 9:00 - 18:00",
 										officeWorkingTime: "Mn. - Fr.: 9:00 - 18:00",
 										managerSkype: "@scarmanager",
@@ -188,10 +197,10 @@ const Map = (props: any) => {
 									toggleMarker({
 										show: "markerinfo active",
 										city: "POLTAVA",
-										phone: "+38 (063) 03 16 565",
+										phone: "+38 (063) 03 16 343",
 										questionMail: "info@s-car.com",
 										partnersMail: "partner@s-car.com",
-										officeAdress: "28 Park Road London WC36 7MB",
+										officeAdress: "28 Park Road London",
 										warehouseWorkingTime: "Mn. - Fr.: 9:00 - 18:00",
 										officeWorkingTime: "Mn. - Fr.: 9:00 - 18:00",
 										managerSkype: "@scarmanager",
@@ -206,10 +215,10 @@ const Map = (props: any) => {
 									toggleMarker({
 										show: "markerinfo active",
 										city: "KHERSON",
-										phone: "+38 (063) 03 16 565",
+										phone: "+38 (063) 03 16 132",
 										questionMail: "info@s-car.com",
 										partnersMail: "partner@s-car.com",
-										officeAdress: "28 Park Road London WC36 7MB",
+										officeAdress: "28 Park Road London",
 										warehouseWorkingTime: "Mn. - Fr.: 9:00 - 18:00",
 										officeWorkingTime: "Mn. - Fr.: 9:00 - 18:00",
 										managerSkype: "@scarmanager",
@@ -224,10 +233,10 @@ const Map = (props: any) => {
 									toggleMarker({
 										show: "markerinfo active",
 										city: "ZAPORIZHYA",
-										phone: "+38 (063) 03 16 565",
+										phone: "+38 (063) 03 16 756",
 										questionMail: "info@s-car.com",
 										partnersMail: "partner@s-car.com",
-										officeAdress: "28 Park Road London WC36 7MB",
+										officeAdress: "28 Park Road London",
 										warehouseWorkingTime: "Mn. - Fr.: 9:00 - 18:00",
 										officeWorkingTime: "Mn. - Fr.: 9:00 - 18:00",
 										managerSkype: "@scarmanager",
@@ -242,10 +251,10 @@ const Map = (props: any) => {
 									toggleMarker({
 										show: "markerinfo active",
 										city: "VINNITSYA",
-										phone: "+38 (063) 03 16 565",
+										phone: "+38 (063) 03 16 442",
 										questionMail: "info@s-car.com",
 										partnersMail: "partner@s-car.com",
-										officeAdress: "28 Park Road London WC36 7MB",
+										officeAdress: "28 Park Road London",
 										warehouseWorkingTime: "Mn. - Fr.: 9:00 - 18:00",
 										officeWorkingTime: "Mn. - Fr.: 9:00 - 18:00",
 										managerSkype: "@scarmanager",
@@ -260,10 +269,10 @@ const Map = (props: any) => {
 									toggleMarker({
 										show: "markerinfo active",
 										city: "ODESSA",
-										phone: "+38 (063) 03 16 565",
+										phone: "+38 (063) 03 16 333",
 										questionMail: "info@s-car.com",
 										partnersMail: "partner@s-car.com",
-										officeAdress: "28 Park Road London WC36 7MB",
+										officeAdress: "28 Park Road London",
 										warehouseWorkingTime: "Mn. - Fr.: 9:00 - 18:00",
 										officeWorkingTime: "Mn. - Fr.: 9:00 - 18:00",
 										managerSkype: "@scarmanager",
@@ -272,15 +281,6 @@ const Map = (props: any) => {
 							/>
                     	</GoogleMapReact>
                     </Row>
-                </Col>
-                <Col lg={6} md={12} xs={12} className="margin-top-30 padding-left-70">
-                    {
-                        state.isPressedMarker ? (
-                            <InfoBlock
-                                data={state.data}
-                            />
-                        ) : null
-                    }
                 </Col>
             </Row>
         </Container>
