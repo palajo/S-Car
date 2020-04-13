@@ -142,6 +142,9 @@ a{
 	&:hover::before{
 		background-position: left bottom;
 	}
+	&:focus{
+		outline: none;
+	}
 }
 .z-index-1{
 	z-index: 1;

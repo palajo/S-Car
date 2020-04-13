@@ -8,47 +8,87 @@
 }
 .mainmenu{
 	background-image: url(../static/images/icons/icon-menu.svg);
+
+	&:hover{
+		background-image: url(../static/images/icons/hovered/icon-menu.svg);
+		transition: 0.1s ease;
+	}
 }
 .mainmenu-white{
 	background-image: url(../static/images/icons/icon-menu-white.svg);
+
+	&:hover{
+		background-image: url(../static/images/icons/hovered/icon-menu.svg);
+		transition: 0.1s ease;
+	}
 }
 .mainmenu-blue{
 	background-image: url(../static/images/icons/icon-menu-blue.svg);
+
+	&:hover{
+		background-image: url(../static/images/icons/icon-menu.svg);
+		transition: 0.1s ease;
+	}
 }
 .search{
 	background-image: url(../static/images/icons/icon-search.svg);
+
+	&:hover{
+		background-image: url(../static/images/icons/hovered/icon-search.svg);
+		transition: 0.1s ease;
+	}
 }
 .profile{
 	background-image: url(../static/images/icons/icon-profile.svg);
+
+	&:hover{
+		background-image: url(../static/images/icons/hovered/icon-profile.svg);
+		transition: 0.1s ease;
+	}
 }
 .cart{
 	background-image: url(../static/images/icons/icon-cart.svg);
-}
-.newicon:hover{
-	filter: brightness(125%);
-	transition: 0.1s ease;
-}
 
-
+	&:hover{
+		background-image: url(../static/images/icons/hovered/icon-cart.svg);
+		transition: 0.1s ease;
+	}
+}
 /* contacts icons */
 .contacticon{
 	width: 64px;
 	height: 56px;
 	background-size: cover;
 }
-.contacticon:hover{
-	filter: invert(0.05);
-	transition: 0.1s ease;
-}
 #iconMessage{
 	background-image: url(../static/images/icons/icon-message.svg);
+
+	&:hover{
+		background-image: url(../static/images/icons/hovered/icon-message.svg);
+		transition: 0.1s ease;
+	}
 }
 #iconLocation{
 	background-image: url(../static/images/icons/icon-location.svg);
+
+	&:hover{
+		background-image: url(../static/images/icons/hovered/icon-location.svg);
+		transition: 0.1s ease;
+	}
 }
 #iconSkype{
 	background-image: url(../static/images/icons/icon-skype.svg);
+	
+	&:hover{
+		background-image: url(../static/images/icons/hovered/icon-skype.svg);
+		transition: 0.1s ease;
+	}
 }
 #iconClock{
 	background-image: url(../static/images/icons/icon-clock.svg);
+
+	&:hover{
+		background-image: url(../static/images/icons/hovered/icon-clock.svg);
+		transition: 0.1s ease;
+	}
 }

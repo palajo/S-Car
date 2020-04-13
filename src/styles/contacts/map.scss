@@ -26,32 +26,9 @@
 	width: 12px;
 	height: 24px;
 }
-.someinfo{
-	position: relative;
-	left: -45px;
-	top: 5px;
-
-	width: 400px;
-	padding: 30px 40px;
-
-	background: #fff;
-	border: 1px solid #cdcbcb;
-	border-radius: 15px;
-
-	z-index: 2;
-
-	p{
-		font-size: 14px;
-		font-weight: normal;
-	}
-	.row{
-		.col{
-			.row{
-				margin-bottom: 20px;
-			}
-			.row:last-child{
-				margin-bottom: 0px;
-			}
-		}
-	}
+.markerinfo{
+	display: none;
+}
+.markerinfo.active{
+	display: block;
 }

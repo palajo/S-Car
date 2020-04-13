@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { Container, Row, Col } from 'react-bootstrap';
 
 // importing Mainpage components
 import Header from '../../components/Header';
@@ -15,7 +15,6 @@ function ContactsPage() {
 			<Header />
 			<Breadcrumbs />
 			<Map />
-			<PageContacts />
 			<Footer />
 		</body>
 	);

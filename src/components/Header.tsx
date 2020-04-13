@@ -63,7 +63,7 @@ function Header() {
                         <Col className="max-width-300">
                             <Row className="justify-content-start">
                                 <div className="margin-right-20 margin-right-mobile-10">
-									<div className="newicon mainmenu" onClick={openNav}>
+									<div className="newicon mainmenu-white" onClick={openNav}>
 									</div>
                                 </div>
                                 <div className="align-self-center">

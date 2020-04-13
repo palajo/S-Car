@@ -7,252 +7,245 @@ import '../../styles/contacts/map.scss';
 type MarkerProps = {
     lat: number,
     lng: number,
-
-    markerRegularQuestions: string,
-    markerForPartners: string,
-    markerSalesTime: string,
-    markerWarehouseTime: string,
-    markerSkype: string,
-    markerPhone: string,
-    markerText: string
 }
 
-export const BlueMarker = ({ lat, lng, markerRegularQuestions, markerForPartners, markerSalesTime, markerWarehouseTime, markerSkype, markerPhone, markerText}: MarkerProps) => {
-    const [state, setState] = useState(false);
+type InfoProps = {
+	show: string,
+	id: string,
+	city: string,
+	phone: string,
+	questionMail: string,
+	partnersMail: string,
+	officeAdress: string,
+	warehouseWorkingTime: string,
+	officeWorkingTime: string,
+	managerSkype: string
+}
 
-    const toggleWindow = () => {
-        setState(!state);
-    };
-
+export const BlueMarker = ({ lat, lng}: MarkerProps) => {
     return (
         <>
             <div
                 className="bluemarker"
-                onClick={toggleWindow}
             />
-            {
-                state ? (
-                    <InfoWindow
-                        regularQuestions={markerRegularQuestions}
-                        forPartners={markerForPartners}
-                        salesTime={markerSalesTime}
-                        warehouseTime={markerWarehouseTime}
-                        skype={markerSkype}
-                        phone={markerPhone}
-                        text={markerText}
-                    />
-                ) : null
-            }
         </>
     );
 };
 
-export const RedMarker = ({ lat, lng, markerRegularQuestions, markerForPartners, markerSalesTime, markerWarehouseTime, markerSkype, markerPhone, markerText}: MarkerProps) => {
-    const [state, setState] = useState(false);
-
-    const toggleWindow = () => {
-        setState(!state);
-    };
-
+export const RedMarker = ({ lat, lng}: MarkerProps) => {
     return (
         <>
-            <div className="redmarker" onClick={toggleWindow} />
-            {
-                state ? (
-                    <InfoWindow
-                        regularQuestions={markerRegularQuestions}
-                        forPartners={markerForPartners}
-                        salesTime={markerSalesTime}
-                        warehouseTime={markerWarehouseTime}
-                        skype={markerSkype}
-                        phone={markerPhone}
-                        text={markerText}
-                    />
-                ) : null
-            }
+            <div
+                className="redmarker"
+            />
         </>
     );
 };
 
-type InfoWindowProps = {
-    regularQuestions: string,
-    forPartners: string,
-    salesTime: string,
-    warehouseTime: string,
-    skype: string,
-    phone: string,
-    text: string
-}
-
-export const InfoWindow = ({ regularQuestions, forPartners, salesTime, warehouseTime, skype, phone, text } :InfoWindowProps ) => {
-    return(
-        <div className="someinfo">
-            <Row>
-                <Col>
-                    <Row>
-                        <div className="span">
-                            <p className="gray-12px">Общие вопросы:</p>
-                            <p><b>{regularQuestions}</b></p>
-                        </div>
-                    </Row>
-                    <Row>
-                        <div className="span">
-                            <p className="gray-12px">Партнерам:</p>
-                            <p><b>{forPartners}</b></p>
-                        </div>
-                    </Row>
-                    <Row>
-                        <div className="span">
-                            <p className="gray-12px">Отдел продаж:</p>
-                            <p><b>{salesTime}</b></p>
-                        </div>
-                    </Row>
-                </Col>
-                <Col>
-                    <Row>
-                        <div className="span">
-                            <p className="gray-12px">Склад:</p>
-                            <p><b>{warehouseTime}</b></p>
-                        </div>
-                    </Row>
-                    <Row>
-                        <div className="span">
-                            <p className="gray-12px">Skype:</p>
-                            <p><b>{skype}</b></p>
-                        </div>
-                    </Row>
-                    <Row>
-                        <div className="span">
-                            <p className="gray-12px">Телефон:</p>
-                            <p><b>{phone}</b></p>
-                        </div>
-                    </Row>
-                </Col>
-            </Row>
-            <Row className="margin-top-20">
-                <p>{text}</p>
-            </Row>
-        </div>
+export const InfoBlock = ({ show, id, city, phone, questionMail, partnersMail, officeAdress, warehouseWorkingTime, officeWorkingTime, managerSkype}: InfoProps) => {
+    return (
+		<>
+		<div className={show} id={id}>
+			<Row className="margin-bottom-20">
+				<h2 className="text-uppercase">{city}</h2>
+			</Row>
+			<Row className="margin-bottom-10">
+				<p><b>{phone}</b></p>
+			</Row>
+			<Row className="ContactInfo">
+				<Col>
+					<Row>
+						<div className="span">
+							<div className="contacticon" id="iconMessage"></div>
+						</div>
+						<div className="span margin-left-15 align-self-center">
+							<p className="gray-12px">Ask a question:</p>
+							<p>{questionMail}</p>
+						</div>
+					</Row>
+					<Row>
+						<div className="span">
+							<div className="contacticon" id="iconMessage"></div>
+						</div>
+						<div className="span margin-left-15 align-self-center">
+							<p className="gray-12px">For partners:</p>
+							<p>{partnersMail}</p>
+						</div>
+					</Row>
+					<Row>
+						<div className="span">
+							<div className="contacticon" id="iconLocation"></div>
+						</div>
+						<div className="span margin-left-15 align-self-center">
+							<p className="gray-12px">Address:</p>
+							<p>{officeAdress}</p>
+						</div>
+					</Row>
+				</Col>
+				<Col>
+					<Row>
+						<div className="span">
+							<div className="contacticon" id="iconClock"></div>
+						</div>
+						<div className="span margin-left-15 align-self-center">
+							<p className="gray-12px">Warehouse:</p>
+							<p>{warehouseWorkingTime}</p>
+						</div>
+					</Row>
+					<Row>
+						<div className="span">
+							<div className="contacticon" id="iconClock"></div>
+						</div>
+						<div className="span margin-left-15 align-self-center">
+							<p className="gray-12px">Ask a question:</p>
+							<p>{officeWorkingTime}</p>
+						</div>
+					</Row>
+					<Row>
+						<div className="span">
+							<div className="contacticon" id="iconSkype"></div>
+						</div>
+						<div className="span margin-left-15 align-self-center">
+							<p className="gray-12px">Skype:</p>
+							<p>{managerSkype}</p>
+						</div>
+					</Row>
+				</Col>
+			</Row>
+		</div>
+		</>
     );
-}
-
-
-
+};
 
 const Map = (props: any) => {
     const [center] = useState({lat: 49, lng: 31 });
     const [zoom] = useState(6);
     return (
         <Container>
-            <Row className="justify-content-end margin-bottom-20 margin-right-10">
-                <Row>
-                    <div className="bluemarker small"></div>
-                    <p className="margin-left-10 align-self-center">Склады</p>
-                </Row>
-                <Row className="margin-left-50">
-                    <div className="redmarker small"></div>
-                    <p className="margin-left-10 align-self-center">Представительства</p>
-                </Row>
-            </Row>
-            <Row className="margin-bottom-50" style={{ height: '600px' }}>
-                <GoogleMapReact
-                    bootstrapURLKeys={{ key: 'AIzaSyDzOjrwcI1rI0qh3SbWNVWQ0Yf-Lxu9ezE' }}
-                    defaultCenter={center}
-                    defaultZoom={zoom}
-                >
-                    <BlueMarker
-                        lat={48.4563344}
-                        lng={35.0102654}
-
-                        markerRegularQuestions="info@s-car.com.ua"
-                        markerForPartners="partner@s-car.com.ua"
-                        markerSalesTime="пн - пт с 09:00 до 18:00"
-                        markerWarehouseTime="пн - пт с 09:00 до 18:00"
-                        markerSkype="@scarmanager"
-                        markerPhone="+38 (000) 000 00 01"
-
-                        markerText="24005, Укриана, Киев, ул. Какая-то 23"
-                    />
-                    <BlueMarker
-                        lat={50.4193642}
-                        lng={30.4387041}
-
-                        markerRegularQuestions="info@s-car.com.ua"
-                        markerForPartners="partner@s-car.com.ua"
-                        markerSalesTime="пн - пт с 09:00 до 18:00"
-                        markerWarehouseTime="пн - пт с 09:00 до 18:00"
-                        markerSkype="@scarmanager"
-                        markerPhone="+38 (000) 000 00 02"
-
-                        markerText="24005, Укриана, Киев, ул. Какая-то 23"
-                    />
-                    <RedMarker
-                        lat={49.6021346}
-                        lng={34.487199}
-
-                        markerRegularQuestions="info@s-car.com.ua"
-                        markerForPartners="partner@s-car.com.ua"
-                        markerSalesTime="пн - пт с 09:00 до 18:00"
-                        markerWarehouseTime="пн - пт с 09:00 до 18:00"
-                        markerSkype="@scarmanager"
-                        markerPhone="+38 (000) 000 00 03"
-
-                        markerText="24005, Укриана, Киев, ул. Какая-то 23"
-                    />
-                    <RedMarker
-                        lat={50.9007528}
-                        lng={34.7441745}
-
-                        markerRegularQuestions="info@s-car.com.ua"
-                        markerForPartners="partner@s-car.com.ua"
-                        markerSalesTime="пн - пт с 09:00 до 18:00"
-                        markerWarehouseTime="пн - пт с 09:00 до 18:00"
-                        markerSkype="@scarmanager"
-                        markerPhone="+38 (000) 000 00 04"
-
-                        markerText="24005, Укриана, Киев, ул. Какая-то 23"
-                    />
-                    <RedMarker
-                        lat={47.8563742}
-                        lng={35.035271}
-
-                        markerRegularQuestions="info@s-car.com.ua"
-                        markerForPartners="partner@s-car.com.ua"
-                        markerSalesTime="пн - пт с 09:00 до 18:00"
-                        markerWarehouseTime="пн - пт с 09:00 до 18:00"
-                        markerSkype="@scarmanager"
-                        markerPhone="+38 (000) 000 00 05"
-
-                        markerText="24005, Укриана, Киев, ул. Какая-то 23"
-                    />
-                    <RedMarker
-                        lat={49.2348249}
-                        lng={28.3995944}
-
-                        markerRegularQuestions="info@s-car.com.ua"
-                        markerForPartners="partner@s-car.com.ua"
-                        markerSalesTime="пн - пт с 09:00 до 18:00"
-                        markerWarehouseTime="пн - пт с 09:00 до 18:00"
-                        markerSkype="@scarmanager"
-                        markerPhone="+38 (000) 000 00 06"
-
-                        markerText="24005, Укриана, Киев, ул. Какая-то 23"
-                    />
-                    <RedMarker
-                        lat={46.460123}
-                        lng={30.5717048}
-
-                        markerRegularQuestions="info@s-car.com.ua"
-                        markerForPartners="partner@s-car.com.ua"
-                        markerSalesTime="пн - пт с 09:00 до 18:00"
-                        markerWarehouseTime="пн - пт с 09:00 до 18:00"
-                        markerSkype="@scarmanager"
-                        markerPhone="+38 (000) 000 00 07"
-
-                        markerText="24005, Укриана, Киев, ул. Какая-то 23"
-                    />
-                </GoogleMapReact>
-            </Row>
+			<Row>
+				<Col>
+					<Row className="margin-bottom-10">
+						<div className="d-flex">
+							<div className="bluemarker small"></div>
+							<p className="margin-left-10 align-self-center">Склады</p>
+						</div>
+						<div className="d-flex margin-left-50">
+							<div className="redmarker small"></div>
+							<p className="margin-left-10 align-self-center">Представительства</p>
+						</div>
+					</Row>
+		            <Row style={{ height: '450px' }}>
+		                <GoogleMapReact
+		                    bootstrapURLKeys={{ key: 'AIzaSyDzOjrwcI1rI0qh3SbWNVWQ0Yf-Lxu9ezE' }}
+		                    defaultCenter={center}
+		                    defaultZoom={zoom}
+		                >
+		                    <BlueMarker
+		                        lat={48.4563344}
+		                        lng={35.0102654}
+		                    />
+		                    <BlueMarker
+		                        lat={50.4193642}
+		                        lng={30.4387041}
+		                    />
+		                    <RedMarker
+		                        lat={49.6021346}
+		                        lng={34.487199}
+		                    />
+		                    <RedMarker
+		                        lat={50.9007528}
+		                        lng={34.7441745}
+		                    />
+		                    <RedMarker
+		                        lat={47.8563742}
+		                        lng={35.035271}
+		                    />
+		                    <RedMarker
+		                        lat={49.2348249}
+		                        lng={28.3995944}
+		                    />
+		                    <RedMarker
+		                        lat={46.460123}
+		                        lng={30.5717048}
+		                    />
+		                </GoogleMapReact>
+		            </Row>
+				</Col>
+				<Col className="margin-top-30 margin-left-50">
+					<InfoBlock
+						show="markerinfo active"
+						id="marker1"
+						city="KIEV"
+						phone="+38 (063) 03 16 565"
+						questionMail="info@s-car.com"
+						partnersMail="partner@s-car.com"
+						officeAdress="28 Park Road London WC36 7MB"
+						warehouseWorkingTime="Mn. - Fr.: 9:00 - 18:00"
+						officeWorkingTime="Mn. - Fr.: 9:00 - 18:00"
+						managerSkype="@scarmanager"
+					/>
+					<InfoBlock
+						show="markerinfo"
+						id="marker2"
+						city="KHARKIV"
+						phone="+38 (063) 03 16 565"
+						questionMail="info@s-car.com"
+						partnersMail="partner@s-car.com"
+						officeAdress="28 Park Road London WC36 7MB"
+						warehouseWorkingTime="Mn. - Fr.: 9:00 - 18:00"
+						officeWorkingTime="Mn. - Fr.: 9:00 - 18:00"
+						managerSkype="@scarmanager"
+					/>
+					<InfoBlock
+						show="markerinfo"
+						id="marker3"
+						city="LVIV"
+						phone="+38 (063) 03 16 565"
+						questionMail="info@s-car.com"
+						partnersMail="partner@s-car.com"
+						officeAdress="28 Park Road London WC36 7MB"
+						warehouseWorkingTime="Mn. - Fr.: 9:00 - 18:00"
+						officeWorkingTime="Mn. - Fr.: 9:00 - 18:00"
+						managerSkype="@scarmanager"
+					/>
+					<InfoBlock
+						show="markerinfo"
+						id="marker4"
+						city="DNIPRO"
+						phone="+38 (063) 03 16 565"
+						questionMail="info@s-car.com"
+						partnersMail="partner@s-car.com"
+						officeAdress="28 Park Road London WC36 7MB"
+						warehouseWorkingTime="Mn. - Fr.: 9:00 - 18:00"
+						officeWorkingTime="Mn. - Fr.: 9:00 - 18:00"
+						managerSkype="@scarmanager"
+					/>
+					<InfoBlock
+						show="markerinfo"
+						id="marker5"
+						city="DNIPRO"
+						phone="+38 (063) 03 16 565"
+						questionMail="info@s-car.com"
+						partnersMail="partner@s-car.com"
+						officeAdress="28 Park Road London WC36 7MB"
+						warehouseWorkingTime="Mn. - Fr.: 9:00 - 18:00"
+						officeWorkingTime="Mn. - Fr.: 9:00 - 18:00"
+						managerSkype="@scarmanager"
+					/>
+					<InfoBlock
+						show="markerinfo"
+						id="marker6"
+						city="DNIPRO"
+						phone="+38 (063) 03 16 565"
+						questionMail="info@s-car.com"
+						partnersMail="partner@s-car.com"
+						officeAdress="28 Park Road London WC36 7MB"
+						warehouseWorkingTime="Mn. - Fr.: 9:00 - 18:00"
+						officeWorkingTime="Mn. - Fr.: 9:00 - 18:00"
+						managerSkype="@scarmanager"
+					/>
+				</Col>
+			</Row>
         </Container>
     );
 }
