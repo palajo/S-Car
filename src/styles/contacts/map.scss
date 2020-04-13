@@ -1,34 +1,23 @@
+.marker{
+	width: 34px;
+	height: 25px;
 
-.bluemarker{
-	width: 16px;
-	height: 32px;
+	background-size: cover !important;
+	cursor: pointer;
 
+	&:hover{
+		filter: brightness(125%);
+		transition: 0.25s ease;
+	}
+}
+#blue.marker{
 	background-image: url(../../static/images/icons/icon-marker-blue.svg);
-	background-size: cover;
 
-	cursor: pointer;
 }
-.redmarker{
-	width: 16px;
-	height: 32px;
-
+#red.marker{
 	background-image: url(../../static/images/icons/icon-marker-red.svg);
-	background-size: cover;
-
-	cursor: pointer;
-}
-
-.bluemarker:hover, .redmarker:hover{
-	filter: brightness(125%);
-	transition: 0.1s ease;
 }
 .small{
-	width: 12px;
-	height: 24px;
-}
-.markerinfo{
-	display: none;
-}
-.markerinfo.active{
-	display: block;
+	width: 34px;
+	height: 25px;
 }
