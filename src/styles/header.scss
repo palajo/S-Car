@@ -8,17 +8,18 @@
 		a.nav-link:hover{
 			color: white;
 			background: #B11622;
-			transition: all 0.1s ease;
+			transition: 0.1s ease;
 		}
 	}
 	.TopNavigation-Hover{
 		padding: 10px 15px;
 		cursor: pointer;
+		transition: 0.1s ease;
 		&:hover{
-			background: #f8f8f8;
+			background: #B11622;
 		}
 		&:hover p{
-			color: #B11622;
+			color: #fff;
 		}
 	}
 
@@ -35,18 +36,16 @@
 
 	a{
 		&:hover{
-			color: #20366C;
+			color: #B11622;
 		}
 	}
 
 	.hover-icon-text:hover .profile{
 		background-image: url(../static/images/icons/hovered/icon-profile.svg);
-		transition: 0.1s ease;
 	}
 
 	.hover-icon-text:hover .cart{
 		background-image: url(../static/images/icons/hovered/icon-cart.svg);
-		transition: 0.1s ease;
 	}
 }
 /* ------------------------ */

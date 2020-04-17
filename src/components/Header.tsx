@@ -13,7 +13,7 @@ import '../styles/margins.scss';
 import Sidebar from './Sidebar';
 import HeaderNavigation from './navigation/HeaderNavigation';
 import Overlay from './Overlay';
-import Search from './search/search-form';
+import SearchForm from './search/search-form';
 import SearchMobile from './search/search-form-mobile';
 import LanguageSwitcher from './language/language-switcher';
 
@@ -24,10 +24,6 @@ import logo from '../static/images/logo.svg';
 function openNav() {
 	(document.getElementById("sidenav") as HTMLInputElement).style.left = "0px";
 	(document.getElementById("overlay") as HTMLInputElement).style.display = "block";
-}
-function openSearch() {
-	var search = (document.getElementById("searchmobile") as HTMLInputElement);
-	search.style.left = (search.style.left === '-400px') ? '20px' : '-400px';
 }
 
 function Header() {
@@ -80,21 +76,14 @@ function Header() {
 						<Col className="align-self-center d-none d-lg-block">
 							<Row className="justify-content-center">
 								<div>
-									<Search />
-									<div className="search-history" id="history">
-										<li>Audi breaks</li>
-										<li>Volkswagen wheel</li>
-										<li>BMW vipers</li>
-										<li>Niva mirror</li>
-										<li>JDM seats</li>
-									</div>
+									<SearchForm />
 								</div>
 							</Row>
 						</Col>
                         <Col>
                             <Row className="justify-content-end">
 								<div className="d-flex margin-right-10 d-lg-none">
-									<div className="newicon search" onClick={openSearch}>
+									<div className="newicon search">
 									</div>
 								</div>
 

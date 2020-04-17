@@ -3,102 +3,12 @@ import {Container, Col, Row} from 'react-bootstrap';
 import GoogleMapReact from 'google-map-react';
 
 import '../../styles/contacts/map.scss';
+import Marker from './marker';
+import InfoBlock from './infoblock';
 
-type MarkerProps = {
-    lat: number,
-    lng: number,
-	color: string,
-    onClick: () => void,
-}
 
-type InfoProps = {
-    data: any
-}
 
-export const Marker = ({lat, lng, color, onClick}: MarkerProps) => {
-    return (
-        <div
-            onClick={onClick}
-            className="marker"
-			id={color}
-        />
-    );
-};
 
-export const InfoBlock = ({data}: InfoProps) => {
-    return (
-        <>
-            <div className={data.show} id={data.id}>
-                <Row className="margin-bottom-20">
-                    <h2 className="text-uppercase">{data.city}</h2>
-                </Row>
-                <Row className="margin-bottom-10">
-                    <p><b>{data.phone}</b></p>
-                </Row>
-                <Row className="ContactInfo">
-                    <Col>
-                        <Row>
-                            <div className="span">
-                                <div className="contacticon" id="iconMessage"></div>
-                            </div>
-                            <div className="span margin-left-15 align-self-center">
-                                <p className="gray-12px">Ask a question:</p>
-                                <p>{data.questionMail}</p>
-                            </div>
-                        </Row>
-                        <Row>
-                            <div className="span">
-                                <div className="contacticon" id="iconMessage"></div>
-                            </div>
-                            <div className="span margin-left-15 align-self-center">
-                                <p className="gray-12px">For partners:</p>
-                                <p>{data.partnersMail}</p>
-                            </div>
-                        </Row>
-                        <Row>
-                            <div className="span">
-                                <div className="contacticon" id="iconLocation"></div>
-                            </div>
-                            <div className="span margin-left-15 align-self-center">
-                                <p className="gray-12px">Address:</p>
-                                <p>{data.officeAdress}</p>
-                            </div>
-                        </Row>
-                    </Col>
-                    <Col>
-                        <Row>
-                            <div className="span">
-                                <div className="contacticon" id="iconClock"></div>
-                            </div>
-                            <div className="span margin-left-15 align-self-center">
-                                <p className="gray-12px">Warehouse:</p>
-                                <p>{data.warehouseWorkingTime}</p>
-                            </div>
-                        </Row>
-                        <Row>
-                            <div className="span">
-                                <div className="contacticon" id="iconClock"></div>
-                            </div>
-                            <div className="span margin-left-15 align-self-center">
-                                <p className="gray-12px">Ask a question:</p>
-                                <p>{data.officeWorkingTime}</p>
-                            </div>
-                        </Row>
-                        <Row>
-                            <div className="span">
-                                <div className="contacticon" id="iconSkype"></div>
-                            </div>
-                            <div className="span margin-left-15 align-self-center">
-                                <p className="gray-12px">Skype:</p>
-                                <p>{data.managerSkype}</p>
-                            </div>
-                        </Row>
-					</Col>
-                </Row>
-            </div>
-        </>
-    );
-};
 
 const Map = (props: any) => {
     const [center] = useState({lat: 48.5, lng: 32});

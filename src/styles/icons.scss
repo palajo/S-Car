@@ -5,13 +5,14 @@
 	background-size: cover;
 
 	cursor: pointer;
+
+	transition: 0.2s ease-out;
 }
 .mainmenu{
 	background-image: url(../static/images/icons/icon-menu.svg);
 
 	&:hover{
 		background-image: url(../static/images/icons/hovered/icon-menu.svg);
-		transition: 0.25s ease;
 	}
 }
 .mainmenu-white{
@@ -19,7 +20,6 @@
 
 	&:hover{
 		background-image: url(../static/images/icons/hovered/icon-menu.svg);
-		transition: 0.25s ease;
 	}
 }
 .mainmenu-blue{
@@ -27,7 +27,6 @@
 
 	&:hover{
 		background-image: url(../static/images/icons/icon-menu.svg);
-		transition: 0.25s ease;
 	}
 }
 .search{
@@ -35,7 +34,6 @@
 
 	&:hover{
 		background-image: url(../static/images/icons/hovered/icon-search.svg);
-		transition: 0.25s ease;
 	}
 }
 .profile{
@@ -43,7 +41,6 @@
 
 	&:hover{
 		background-image: url(../static/images/icons/hovered/icon-profile.svg);
-		transition: 0.25s ease;
 	}
 }
 .cart{
@@ -51,21 +48,22 @@
 
 	&:hover{
 		background-image: url(../static/images/icons/hovered/icon-cart.svg);
-		transition: 0.25s ease;
 	}
 }
 /* contacts icons */
 .contacticon{
 	width: 64px;
 	height: 56px;
+
 	background-size: cover;
+
+	transition: 0.2s ease-out;
 }
 #iconMessage{
 	background-image: url(../static/images/icons/icon-message.svg);
 
 	&:hover{
 		background-image: url(../static/images/icons/hovered/icon-message.svg);
-		transition: 0.25s ease;
 	}
 }
 #iconLocation{
@@ -73,7 +71,6 @@
 
 	&:hover{
 		background-image: url(../static/images/icons/hovered/icon-location.svg);
-		transition: 0.25s ease;
 	}
 }
 #iconSkype{
@@ -81,7 +78,6 @@
 
 	&:hover{
 		background-image: url(../static/images/icons/hovered/icon-skype.svg);
-		transition: 0.25s ease;
 	}
 }
 #iconClock{
@@ -89,6 +85,5 @@
 
 	&:hover{
 		background-image: url(../static/images/icons/hovered/icon-clock.svg);
-		transition: 0.25s ease;
 	}
 }
