@@ -9,13 +9,12 @@ import InfoBlock from './infoblock';
 
 
 
-
 const Map = (props: any) => {
-    const [center] = useState({lat: 48.5, lng: 32});
+    const [center] = useState({lat: 49, lng: 31});
     const [state, setState] = useState({
         data: {
             show: "markerinfo active",
-            city: "KIEV",
+            city: "KHARKIV",
             phone: "+38 (063) 03 16 565",
             questionMail: "info@s-car.com",
             partnersMail: "partner@s-car.com",
@@ -61,11 +60,29 @@ const Map = (props: any) => {
                         <GoogleMapReact
                             bootstrapURLKeys={{key: 'AIzaSyDzOjrwcI1rI0qh3SbWNVWQ0Yf-Lxu9ezE'}}
                             defaultCenter={center}
-                            defaultZoom={6}
+                            defaultZoom={5.6}
                         >
-                            <Marker
-                                lat={48.4563344}
-                                lng={35.0102654}
+							<Marker
+								lat={49.931709}
+								lng={36.267136}
+								color="blue"
+								onClick={() => {
+									toggleMarker({
+										show: "markerinfo active",
+										city: "KHARKIV",
+										phone: "+38 (063) 03 16 125",
+										questionMail: "info@s-car.com",
+										partnersMail: "partner@s-car.com",
+										officeAdress: "28 Park Road London",
+										warehouseWorkingTime: "Mn. - Fr.: 9:00 - 18:00",
+										officeWorkingTime: "Mn. - Fr.: 9:00 - 18:00",
+										managerSkype: "@scarmanager",
+									});
+								}}
+							/>
+							<Marker
+                                lat={48.456331}
+                                lng={35.012457}
 								color="blue"
                                 onClick={() => {
                                     toggleMarker({
@@ -82,8 +99,8 @@ const Map = (props: any) => {
                                 }}
                             />
 							<Marker
-								lat={50.4193642}
-		                        lng={30.4387041}
+								lat={50.419360}
+		                        lng={30.441049}
 								color="blue"
 								onClick={() => {
 									toggleMarker({

@@ -3,16 +3,13 @@
 	border-bottom: 1px solid #962932;
 }
 .SliderBackground{
-	padding: 150px 0px;
-
 	.SliderHeading{
-		animation: slider 1s ease;
-
 		font-size: 36px;
 		line-height: 42px;
 		text-transform: uppercase;
-	}
 
+		max-width: 450px;
+	}
 	.line{
 		max-width: 350px;
 		background: #cdcbcb;
@@ -22,24 +19,29 @@
 	}
 
 	p.SliderText{
-		animation: slider 1s ease;
-
 		font-size: 16px;
 		line-height: 24px;
 
 		margin-bottom: 20px;
 		width: 100%;
 	}
-	button{
-		animation: slider 1s ease;
+	.slick-slide{
+		div{
+			outline: none;
+		}
+	}
+	.slick-active{
+		.SliderHeading, p.SliderText, button{
+			animation: slider 1s ease-in-out;
+		}
 	}
 	@keyframes slider {
-	  0% {
-		  transform: scale(0.85);
-	  }
-	  100% {
-		  transform: scale(1);
-	  }
+		0% {
+	        transform: scale(0.85);
+	    }
+	    100% {
+	        transform: scale(1);
+	    }
 	}
 }
 .news-block{
@@ -70,3 +72,30 @@
 }
 
 /* ------------------------ */
+.main-slider{
+	height: 500px;
+
+	.slick-list{
+		height: 100%;
+
+		.slick-track{
+			height: 100%;
+			.slick-slide{
+				div{
+					div{
+						.row{
+							height: 100%;
+							.col{
+								align-self: center;
+							}
+						}
+					}
+				}
+			}
+		}
+
+	}
+}
+.slick-slide > div{
+	height: 100%;
+}

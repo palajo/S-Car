@@ -14,12 +14,12 @@ import Sidebar from './Sidebar';
 import HeaderNavigation from './navigation/HeaderNavigation';
 import Overlay from './Overlay';
 import SearchForm from './search/search-form';
-import SearchMobile from './search/search-form-mobile';
 import LanguageSwitcher from './language/language-switcher';
 
 
 // importing Header images
 import logo from '../static/images/logo.svg';
+import SearchFormMobile from "./search/search-form-mobile";
 
 function openNav() {
 	(document.getElementById("sidenav") as HTMLInputElement).style.left = "0px";
@@ -31,7 +31,6 @@ function Header() {
         <header>
 			<Overlay />
             <Sidebar />
-			<SearchMobile />
             <Container fluid className="TopNavigation">
                 <Container>
                     <Row className="justify-content-between">
@@ -83,8 +82,7 @@ function Header() {
                         <Col>
                             <Row className="justify-content-end">
 								<div className="d-flex margin-right-10 d-lg-none">
-									<div className="newicon search">
-									</div>
+									<SearchFormMobile />
 								</div>
 
 								<NavLink to="/profile">

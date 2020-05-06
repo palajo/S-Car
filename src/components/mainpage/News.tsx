@@ -1,59 +1,24 @@
 import React from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
+import { Row, Col } from 'react-bootstrap';
 
 
 // importing News components styles
 import '../../styles/mainpage/news.scss';
 
-
-// importing News images
-import newsimage from '../../static/images/news/example.jpg';
-
-
 // setting News parameters
-type NewProps = {
-    newImage: string,
-    newDescription: string
+type NewsProps = {
+    newsTitle: string,
+    newsContent: string
 }
 
-export const New = ({ newImage, newDescription }: NewProps) =>
-    <Col lg={3} md={6} xs={12} className="padding-15-mobile">
-        <img alt="" src={newImage} />
-        <h3 className="NewsHeading">{newDescription}</h3>
-		<p>
-			Lorem ipsum dolor sit amet, consectetur elit,
-			sed do eiusmod tempor incididunt ut labore.
-		</p>
-    </Col>
-
-
-function News() {
-	return(
-		<Container className="margin-bottom-50">
-			<Row className="margin-bottom-30 justify-content-center">
-				<h2>Latest news</h2>
-			</Row>
-			<Row className="NewsBlock">
-				<New
-					newImage={newsimage}
-					newDescription="Some news over here."
-				/>
-				<New
-					newImage={newsimage}
-					newDescription="Some news over here."
-				/>
-				<New
-					newImage={newsimage}
-					newDescription="Some news over here."
-				/>
-				<New
-					newImage={newsimage}
-					newDescription="Some news over here."
-				/>
-			</Row>
-		</Container>
-    );
-}
-
+export const News = ({ newsTitle, newsContent }: NewsProps) =>
+	<Row>
+		<Col className="news-headline">
+			<h3 className="margin-bottom-5">{newsTitle}</h3>
+			<p>
+				{newsContent}
+			</p>
+		</Col>
+	</Row>
 
 export default News;

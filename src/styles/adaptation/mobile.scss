@@ -12,8 +12,8 @@
 
     /* Button styles */
     .button{
-        width: 180px;
-        line-height: 40px;
+        width: 220px;
+        line-height: 50px;
     }
     .button::before{
         border: 1px solid #fff;
@@ -61,35 +61,6 @@
     .padding-15-mobile{
         padding: 15px;
     }
-
-
-	/* Slider styles */
-	.Slider{
-		background: url(../../static/images/slider-background-mobile.jpg);
-		background-size: cover;
-		background-position: 70%;
-		padding: 150px 0px;
-
-		.SliderHeading{
-			font-size: 30px;
-			line-height: 30px;
-
-			color: white;
-		}
-		.SliderText{
-			font-size: 14px;
-			line-height: 14px;
-
-			color: white;
-		}
-		hr{
-			background: white;
-		}
-		.SliderBackground{
-			padding: 0px 50px;
-			background: none;
-		}
-	}
 
     /* Benefits styles */
     .IconIcon{
@@ -164,5 +135,31 @@
 	}
 	.padding-left-70{
 		padding-left: 0;
+	}
+	.Slider{
+		.row{
+			margin-left: 0;
+			margin-right: 0;
+		}
+		padding: 0;
+		.container{
+			padding: 0;
+		}
+	}
+	.SliderBackground{
+		background: #f8f8f8;
+		padding: 70px 30px;
+	}
+	.news{
+		margin-top: 50px;
+		margin-bottom: 50px;
+	}
+	.news-block{
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+
+	.ContactBlock{
+		margin-bottom: 50px;
 	}
 }

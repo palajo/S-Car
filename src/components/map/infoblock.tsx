@@ -16,7 +16,7 @@ export const InfoBlock = ({data}: InfoProps) => {
                     <p><b>{data.phone}</b></p>
                 </Row>
                 <Row className="ContactInfo">
-                    <Col>
+                    <Col xs={12} md={12} lg={6}>
                         <Row>
                             <div className="span">
                                 <div className="contacticon" id="iconMessage"></div>
@@ -45,7 +45,7 @@ export const InfoBlock = ({data}: InfoProps) => {
                             </div>
                         </Row>
                     </Col>
-                    <Col>
+                    <Col xs={12} md={12} lg={6}>
                         <Row>
                             <div className="span">
                                 <div className="contacticon" id="iconClock"></div>

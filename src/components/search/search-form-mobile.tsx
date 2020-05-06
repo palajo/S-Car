@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 
 
 import Search from './search-form';
@@ -6,13 +6,32 @@ import Search from './search-form';
 import '../../styles/search/search-form-mobile.scss';
 
 
-function searchFormMobile() {
-	return(
-		<div className="search-form-slide d-lg-none" id="searchmobile">
-			<Search />
-		</div>
-    );
+const SearchFormMobile = (props: any) => {
+
+		const [state, setState] = useState({
+			isPressedShowSearch: false,
+		});
+
+		const toggleSearch = () => {
+			setState({
+				isPressedShowSearch: !state.isPressedShowSearch,
+			});
+		};
+
+		return(
+
+			<>
+				<div className="newicon search" onClick={toggleSearch}></div>
+				{
+					state.isPressedShowSearch ? (
+						<div className="SearchMobile">
+							<Search />
+						</div>
+					) : null
+				}
+			</>
+		);
 }
 
 
-export default searchFormMobile;
+export default SearchFormMobile;
