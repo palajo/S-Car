@@ -18,7 +18,7 @@ function Offices() {
 					managerSkype="@scarmanager"
 				/>
 				<ContactBlock
-				phone="+38 (000) 00 00 000"
+					phone="+38 (000) 00 00 000"
 					city="KHARKIV"
 					questionMail="info@s-car.com"
 					partnersMail="partner@s-car.com"
